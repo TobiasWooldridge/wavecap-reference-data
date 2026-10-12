@@ -50,7 +50,7 @@ def main():
     continue
    identities[identity]=appliance;normalized.append(appliance)
   result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':normalized,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet) and not failed}}
-  (ROOT/'data').mkdir(exist_ok=True);(ROOT/'data/reference.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
+  (ROOT/'data').mkdir(exist_ok=True);(ROOT/'data/reference.json.tmp').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n');(ROOT/'data/reference.json.tmp').replace(ROOT/'data/reference.json')
  codes=sorted(fleet,key=lambda c:(c not in ('SEAF','SLSB'),c not in current,c))[:args.limit]
  for code in codes:
   url='vehicles/Appliance_Display.asp?Service_Code=SACFS&Station_Code='+urllib.parse.quote(code)
