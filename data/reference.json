@@ -8808,7 +8808,7 @@
       "name": "CABA Pod",
       "registration": null,
       "source_updated_text": "Wednesday, September 25, 2024",
-      "make_model": "",
+      "make_model": null,
       "class_id": "sacfs:class:POD",
       "class_source_url": "https://www.fire-brigade.asn.au/vehicles/vehicles/sacfs-pod.asp",
       "source_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SACFS&Station_Code=SLSB",

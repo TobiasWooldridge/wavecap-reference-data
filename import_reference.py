@@ -46,7 +46,7 @@ def main():
    flat=text(block);reg=re.search(r'Registration Number:\s*([A-Za-z0-9 -]+?)(?:\s+Equipment:|$)',flat)
    registration=reg.group(1).strip() if reg else None
    unit_key=re.sub('[^A-Z0-9]+','-',name.upper()).strip('-')
-   record={'id':'sacfs:appliance:'+code+':'+unit_key,'station_id':'sacfs:station:'+code,'name':name,'registration':registration,'source_updated_text':text(updated.group(1)) if updated else None,'make_model':text(m.group(3)),'class_id':'sacfs:class:'+pathlib.PurePosixPath(m.group(1)).stem.removeprefix('sacfs-').upper(),'class_source_url':urllib.parse.urljoin(BASE,m.group(1)),'source_url':p['url'],'operational_status':'listed_at_source','photo':{'page_url':p['url'],'credit':photo_credits.get(name),'rights_status':'conflicting-notices','redistribution_allowed':None,'image_url':None}}
+   record={'id':'sacfs:appliance:'+code+':'+unit_key,'station_id':'sacfs:station:'+code,'name':name,'registration':registration,'source_updated_text':text(updated.group(1)) if updated else None,'make_model':text(m.group(3)) or None,'class_id':'sacfs:class:'+pathlib.PurePosixPath(m.group(1)).stem.removeprefix('sacfs-').upper(),'class_source_url':urllib.parse.urljoin(BASE,m.group(1)),'source_url':p['url'],'operational_status':'listed_at_source','photo':{'page_url':p['url'],'credit':photo_credits.get(name),'rights_status':'conflicting-notices','redistribution_allowed':None,'image_url':None}}
    for field,label in [('water_litres','Water Capacity'),('foam_litres','Foam Quantity')]:
     match=re.search(label+r':\s*(\d+)\s*Litres',flat);record[field]=int(match.group(1)) if match else None
    apps.append(record)

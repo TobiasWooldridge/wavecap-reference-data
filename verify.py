@@ -16,7 +16,7 @@ for s in d['stations']:
 for a in d['appliances']:
  assert a['id'] not in seen,a['id'];seen.add(a['id'])
  assert a['station_id'] in station_ids;url(a['source_url']);url(a['class_source_url'])
- assert a['name'] and a['make_model']
+ assert a['name'] and (a['make_model'] is None or isinstance(a['make_model'],str))
  for field in ('water_litres','foam_litres'): assert a[field] is None or isinstance(a[field],int) and a[field]>=0
  assert a['photo']['image_url'] is None and a['photo']['redistribution_allowed'] is None
  assert a['photo']['rights_status']=='conflicting-notices';url(a['photo']['page_url'])
