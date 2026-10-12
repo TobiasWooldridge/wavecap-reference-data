@@ -1,0 +1,65 @@
+/** MIT-licensed interface; data remains separately licensed. */
+export interface StationReference {
+  id: string;
+  service: 'SACFS';
+  station_code: string;
+  name: string;
+  source_url: string;
+  listed_in_current_station_index: boolean;
+  listed_in_appliance_index: boolean;
+  record_kind: 'station_or_group_or_region';
+  operational_status: 'unknown';
+}
+export interface ApplianceReference {
+  id: string;
+  station_id: string;
+  name: string;
+  registration: string | null;
+  source_updated_text: string | null;
+  make_model: string | null;
+  class_id: string;
+  class_source_url: string;
+  source_url: string;
+  operational_status: 'listed_at_source';
+  water_litres: number | null;
+  foam_litres: number | null;
+  photo: {
+    page_url: string;
+    credit: string | null;
+    rights_status: 'conflicting-notices';
+    redistribution_allowed: null;
+    image_url: null;
+  };
+}
+export interface SourceReference {
+  url: string;
+  sha256: string;
+  retrieved_at: string;
+  rights_status: 'conflicting-notices';
+  attribution: string;
+}
+export interface ClassReference {
+  id: string;
+  name: string;
+  water_litres_typical: number;
+  drive: string;
+  variants: string[];
+  source_url: string;
+  equipment_varies_by_appliance: boolean;
+}
+export interface ReferenceSnapshot {
+  schema_version: 1;
+  data_license: 'CC-BY-SA-4.0';
+  third_party_rights: string;
+  stations: StationReference[];
+  appliances: ApplianceReference[];
+  classes: ClassReference[];
+  sources: SourceReference[];
+  coverage: {
+    current_station_index_count: number;
+    appliance_index_count: number;
+    detail_pages_visited: string[];
+    detail_page_failures: {station_code: string; error: string}[];
+    complete_appliance_inventory: boolean;
+  };
+}
