@@ -31,16 +31,30 @@ def main():
  apps=[];failed=[];visited=[]
  classes=[{'id':'sacfs:class:34','name':'34','water_litres_typical':3000,'drive':'4WD','variants':['34R','34P','34URP'],'source_url':BASE+'vehicles/vehicles/sacfs-34.asp','equipment_varies_by_appliance':True}]
  def checkpoint():
+  normalized=[]; identities={}
+  for item in apps:
+   appliance=dict(item)
+   identity=(appliance['station_id'],appliance['name'],appliance['registration'])
+   if appliance['registration'] and identity in identities:
+    previous=identities[identity]
+    conflicts={key for key,value in appliance.items() if key!='id' and value is not None and previous[key] is not None and value!=previous[key]}
+    if not conflicts:
+     for key,value in appliance.items():
+      if previous[key] is None:previous[key]=value
+     continue
+   identities[identity]=appliance;normalized.append(appliance)
   by_name={}
-  for appliance in apps:
+  for appliance in normalized:
    by_name.setdefault((appliance['station_id'],appliance['name']),[]).append(appliance)
   for group in by_name.values():
    if len(group)>1:
     for appliance in group:
      base='sacfs:appliance:'+appliance['station_id'].split(':')[-1]+':'+re.sub('[^A-Z0-9]+','-',appliance['name'].upper()).strip('-')
      disambiguator=appliance['registration'] or hashlib.sha256(json.dumps({k:v for k,v in appliance.items() if k!='id'},sort_keys=True).encode()).hexdigest()[:12]
+     if sum(other['registration']==appliance['registration'] for other in group)>1:
+      disambiguator+='-'+hashlib.sha256(json.dumps({k:v for k,v in appliance.items() if k!='id'},sort_keys=True).encode()).hexdigest()[:12]
      appliance['id']=base+':'+re.sub('[^A-Z0-9]+','-',disambiguator.upper()).strip('-')
-  result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':apps,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet)}}
+  result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':normalized,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet)}}
   (ROOT/'data').mkdir(exist_ok=True);(ROOT/'data/reference.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
  codes=sorted(fleet,key=lambda c:(c not in ('SEAF','SLSB'),c not in current,c))[:args.limit]
  for code in codes:
