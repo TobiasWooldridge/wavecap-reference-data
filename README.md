@@ -1,4 +1,4 @@
-# CFS factual reference
+# CFS and MFS factual reference
 
 Independent normalized public-source facts from the SACFS Promotions Unit,
 https://www.fire-brigade.asn.au/ . This repository contains no radio observations,
@@ -12,8 +12,10 @@ See RIGHTS.md before displaying media. Code is MIT; this independently arranged
 factual dataset is offered under CC BY-SA 4.0. Neither licence replaces third-party
 rights or resolves the source site's inconsistent notices.
 
-Run `python3 import_reference.py --limit 794` to update all indexed appliance
-pages. Default is indexes only, deliberately replacing detail coverage with an
+Run `python3 import_reference.py --service SACFS --limit 794` for CFS and
+`python3 import_reference.py --service SAMFS --limit 60` for MFS. These update
+agency snapshots `data/sacfs.agency.json` and `data/samfs.agency.json`, and atomically
+rebuild the combined `data/reference.json`. Other agencies are preserved. Default is indexes only, deliberately replacing that agency’s detail coverage with an
 explicit incomplete snapshot; review the diff before committing. Requests are
 serial, at most one new request per second, cached under `../../cache/`, with a
 45-second timeout and no automatic retry storm. `--refresh` refetches selected
@@ -26,7 +28,7 @@ is never claimed unless every index entry was visited.
 ## Consumer contract
 
 - `schema_version`: 1. IDs are namespaced strings, never radio IDs.
-- Station IDs: `sacfs:station:<source Station_Code>`. Service is independently
+- Station IDs: `sacfs:station:<source Station_Code>` or `samfs:station:<code>`. Service is independently
   retained; codes are source identifiers, not assumed callsign abbreviations.
 - Appliance IDs are registration-aware source-listing identities. The registration
   suffix is always present when known, so importing another same-named vehicle
@@ -34,9 +36,20 @@ is never claimed unless every index entry was visited.
   and may match multiple vehicles. These IDs do not claim a permanent chassis
   identity: source name, station or registration changes require re-verification.
   Missing-registration IDs are explicitly `provisional`, derived from name/class.
-  Compatible repeated rows merge missing fields; contradictory repeated fields
-  become null with alternatives retained in `source_conflicts`. Do not merge by
+  Compatible repeated rows merge missing fields. Contradictory nullable numerical/model
+  facts become null with alternatives retained in `source_conflicts`; required
+  structure/links retain their first source variant and record alternatives.
+  Consumers must suppress any disputed field rather than treating the retained
+  structural variant as resolved. Do not merge by
   class number alone or treat a named listing_key as unique without checking.
+- Full labels retain source names. Compact labels are `SEAF 34` for CFS and
+  `MFS 401` for MFS. MFS vehicle codes come from exact public source appliance
+  names. Facility numbers come from explicit source “Station” labels. Neither
+  a radio ID nor a universal last-digit type splitter is used. Per-class source
+  type-code variants are retained separately; individual roles come from their
+  own source type links.
+- Coverage visit entries are agency-qualified station IDs; `coverage.by_service`
+  retains each agency’s completeness/failures separately.
 - Station/group/region distinction is not inferred from names. Current station
   index membership and appliance index membership are separate booleans.
   Source indexes disagree in scope; absence does not establish decommissioning.

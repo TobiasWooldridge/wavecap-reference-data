@@ -1,8 +1,10 @@
 /** MIT-licensed interface; data remains separately licensed. */
 export interface StationReference {
   id: string;
-  service: 'SACFS';
+  service: 'SACFS' | 'SAMFS';
   station_code: string;
+  facility_name: string;
+  station_number: string | null;
   name: string;
   source_url: string;
   listed_in_current_station_index: boolean;
@@ -13,6 +15,11 @@ export interface StationReference {
 export interface ApplianceReference {
   id: string;
   station_id: string;
+  service: 'SACFS' | 'SAMFS';
+  full_label: string;
+  compact_label: string;
+  vehicle_code: string | null;
+  vehicle_role: string;
   listing_key: string;
   id_stability: 'registration-aware-listing' | 'provisional';
   source_conflicts?: Record<string, unknown[]>;
@@ -45,8 +52,9 @@ export interface ClassReference {
   id: string;
   name: string;
   water_litres_typical: number;
-  drive: string;
-  variants: string[];
+  drive?: string;
+  variants?: string[];
+  source_type_codes?: string[];
   source_url: string;
   equipment_varies_by_appliance: boolean;
 }
@@ -62,7 +70,8 @@ export interface ReferenceSnapshot {
     current_station_index_count: number;
     appliance_index_count: number;
     detail_pages_visited: string[];
-    detail_page_failures: {station_code: string; error: string}[];
+    detail_page_failures: {station_id: string; error: string}[];
     complete_appliance_inventory: boolean;
+    by_service: Record<string, {current_station_index_count: number; appliance_index_count: number; detail_pages_visited: string[]; detail_page_failures: {station_id: string; error: string}[]; complete_appliance_inventory: boolean}>;
   };
 }

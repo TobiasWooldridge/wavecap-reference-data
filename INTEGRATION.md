@@ -26,6 +26,8 @@ Offline example (no browser/network/image side effects):
 ```sh
 python3 cfs-reference/lookup.py --station-id sacfs:station:SEAF --appliance-name 'Seaford 34'
 python3 cfs-reference/lookup.py --station-id sacfs:station:SLSB
+python3 cfs-reference/lookup.py --station-id samfs:station:40 --vehicle-code 401
+python3 cfs-reference/lookup.py --station-id samfs:station:32 --vehicle-code 321
 ```
 
 Application-local, explicitly verified identity mappings can point at `station.id`
@@ -44,3 +46,9 @@ credit if available. `image_url` is null, and no binary is licensed here. Use
 accessible link text and avoid a blank image placeholder. Station icon remains
 fixed; vehicle type metadata is independent of station identity. Class 34 is a
 shared category, not the identifier of a unique vehicle.
+
+SAMFS40 is St Marys, vehicle401 is its source-listed pumper. Vehicle409 is
+a separate pumper-rescue, not a synonym. SAMFS32 Salisbury and SACFS SLSB Salisbury
+are distinct facilities. `compact_label` is ready for display (`MFS 401`, `MFS 321`,
+`SEAF 34`); keep full_label/source/rights available in detail views. No private RF
+identifier joins are provided. Suppress disputed fields listed in source_conflicts.
