@@ -74,13 +74,13 @@ def normalize(appliances):
     return result
 
 def write_json(path, value):
-    path.parent.mkdir(exist_ok=True)
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + '.tmp')
     temporary.write_text(json.dumps(value, indent=2, ensure_ascii=False) + '\n')
     temporary.replace(path)
 
 def bundle():
-    snapshots = [json.loads(path.read_text()) for path in sorted((ROOT / 'data').glob('*.agency.json'))]
+    snapshots = [json.loads(path.read_text()) for path in sorted((ROOT / 'data/australia/south-australia/fire').glob('*.agency.json'))]
     coverage = {key: sum(s['coverage'][key] for s in snapshots) for key in ('current_station_index_count', 'appliance_index_count')}
     coverage.update({
         'detail_pages_visited': [entry for s in snapshots for entry in s['coverage']['detail_pages_visited']],
@@ -94,7 +94,7 @@ def bundle():
     for key in ('stations', 'appliances', 'classes'):
         result[key] = [entry for snapshot in snapshots for entry in snapshot[key]]
     result['sources'] = list({source['url']: source for snapshot in snapshots for source in snapshot['sources']}.values())
-    write_json(ROOT / 'data/reference.json', result)
+    write_json(ROOT / 'data/australia/south-australia/fire/reference.json', result)
 
 def import_service(service, limit, refresh):
     namespace = SERVICES[service]
@@ -125,7 +125,7 @@ def import_service(service, limit, refresh):
         coverage = {'current_station_index_count': len(current), 'appliance_index_count': len(fleet),
                     'detail_pages_visited': visited, 'detail_page_failures': failures,
                     'complete_appliance_inventory': len(visited) == len(fleet) and not failures}
-        write_json(ROOT / ('data/' + namespace + '.agency.json'), {
+        write_json(ROOT / ('data/australia/south-australia/fire/' + namespace + '.agency.json'), {
             'schema_version': 1, 'service': service, 'data_license': 'CC-BY-SA-4.0',
             'stations': stations, 'appliances': normalize(appliances), 'classes': classes,
             'sources': sources, 'coverage': coverage,

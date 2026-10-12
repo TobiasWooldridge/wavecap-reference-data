@@ -2,7 +2,7 @@
 import json,pathlib
 ROOT=pathlib.Path(__file__).resolve().parent
 def validate():
- d=json.loads((ROOT/'datasets/radio/sascan-sagrn-talkgroups.v1.json').read_text())
+ d=json.loads((ROOT/'data/australia/south-australia/radio/sascan-sagrn-talkgroups.v1.json').read_text())
  p=d['provenance'];assert p['requested_capture_timestamp']==p['actual_capture_timestamp']=='20251225115143'
  assert p['source_updated_date']=='2025-07-27' and p['upstream_license'] is None and p['raw_html_distributed'] is False
  records=d['records'];assert len(records)==678 and len({r['id'] for r in records})==678

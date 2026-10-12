@@ -1,7 +1,22 @@
 """Focused regressions for real source HTML and duplicate-listing findings."""
-import unittest
+import json,pathlib,tempfile,unittest
+from unittest.mock import patch
+import import_reference
 from import_reference import links,normalize
 class ReferenceTests(unittest.TestCase):
+ def test_offline_rebuild_uses_scoped_agency_snapshots(self):
+  relative=pathlib.Path('data/australia/south-australia/fire')
+  source=pathlib.Path(__file__).resolve().parent/relative
+  expected=json.loads((source/'reference.json').read_text())
+  with tempfile.TemporaryDirectory() as temporary:
+   destination=pathlib.Path(temporary)/relative
+   destination.mkdir(parents=True)
+   for snapshot in source.glob('*.agency.json'):
+    (destination/snapshot.name).write_bytes(snapshot.read_bytes())
+   with patch.object(import_reference,'ROOT',pathlib.Path(temporary)):
+    import_reference.bundle()
+   actual=json.loads((destination/'reference.json').read_text())
+   self.assertEqual(actual,expected)
  def test_unclosed_legacy_anchors_preserve_separate_agencies(self):
   source='<A href="Appliance_Display.asp?Service_Code=SAMFS&Station_Code=40">St Marys<br><A href="Appliance_Display.asp?Service_Code=SACFS&Station_Code=40">Other<br>'
   self.assertEqual(links(source,'Appliance','SAMFS')['40']['id'],'samfs:station:40')

@@ -2,7 +2,7 @@
 """Offline agency, coverage, provenance and non-redistribution verification."""
 import json,pathlib,urllib.parse
 root=pathlib.Path(__file__).resolve().parent
-d=json.loads((root/'data/reference.json').read_text())
+d=json.loads((root/'data/australia/south-australia/fire/reference.json').read_text())
 assert d['schema_version']==1 and d['data_license']=='CC-BY-SA-4.0'
 services={'SACFS':'sacfs','SAMFS':'samfs'}
 def url(value):

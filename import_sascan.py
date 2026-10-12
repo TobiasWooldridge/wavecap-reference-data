@@ -47,6 +47,6 @@ def main():
   # Existing labels themselves are not republished from third-party RR-derived configs.
  provenance={'publisher':'SA Scan / sascan.net.au','original_url':ORIGINAL,'archive_url':ARCHIVE,'raw_archive_url':RAW,'requested_capture_timestamp':'20251225115143','actual_capture_timestamp':'20251225115143','capture_datetime':'2025-12-25T11:51:43Z','source_updated_date':'2025-07-27','retrieved_date':'2026-10-12','html_sha256':hashlib.sha256(raw).hexdigest(),'rights_status':'no explicit source reuse licence found; independently structured factual labels only','upstream_license':None,'contribution_license':'CC-BY-SA-4.0','raw_html_distributed':False}
  result={'schema_version':1,'dataset_id':'sascan:sagrn:p25:talkgroups:20251225115143','provenance':provenance,'records':records,'comparison':comparison,'rejected_rows':rejected}
- out=ROOT/'datasets/radio';out.mkdir(parents=True,exist_ok=True);(out/'sascan-sagrn-talkgroups.v1.json').write_text(json.dumps(result,indent=2)+'\n')
+ out=ROOT/'data/australia/south-australia/radio';out.mkdir(parents=True,exist_ok=True);(out/'sascan-sagrn-talkgroups.v1.json').write_text(json.dumps(result,indent=2)+'\n')
  print('SA Scan:',len(records),'distinct TGIDs;',sum(r['has_source_conflict'] for r in records),'source conflicts;',len(rejected),'rejected rows')
 if __name__=='__main__':main()
