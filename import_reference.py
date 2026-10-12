@@ -29,6 +29,19 @@ def main():
  for code in sorted(set(current)|set(fleet)):
   r=dict(current[code] if code in current else fleet[code]);r['listed_in_current_station_index']=code in current;r['listed_in_appliance_index']=code in fleet;r['record_kind']='station_or_group_or_region';r['operational_status']='unknown';stations.append(r)
  apps=[];failed=[];visited=[]
+ classes=[{'id':'sacfs:class:34','name':'34','water_litres_typical':3000,'drive':'4WD','variants':['34R','34P','34URP'],'source_url':BASE+'vehicles/vehicles/sacfs-34.asp','equipment_varies_by_appliance':True}]
+ def checkpoint():
+  by_name={}
+  for appliance in apps:
+   by_name.setdefault((appliance['station_id'],appliance['name']),[]).append(appliance)
+  for group in by_name.values():
+   if len(group)>1:
+    for appliance in group:
+     base='sacfs:appliance:'+appliance['station_id'].split(':')[-1]+':'+re.sub('[^A-Z0-9]+','-',appliance['name'].upper()).strip('-')
+     disambiguator=appliance['registration'] or hashlib.sha256(json.dumps({k:v for k,v in appliance.items() if k!='id'},sort_keys=True).encode()).hexdigest()[:12]
+     appliance['id']=base+':'+re.sub('[^A-Z0-9]+','-',disambiguator.upper()).strip('-')
+  result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':apps,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet)}}
+  (ROOT/'data').mkdir(exist_ok=True);(ROOT/'data/reference.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
  codes=sorted(fleet,key=lambda c:(c not in ('SEAF','SLSB'),c not in current,c))[:args.limit]
  for code in codes:
   url='vehicles/Appliance_Display.asp?Service_Code=SACFS&Station_Code='+urllib.parse.quote(code)
@@ -51,9 +64,8 @@ def main():
     match=re.search(label+r':\s*(\d+)\s*Litres',flat);record[field]=int(match.group(1)) if match else None
    apps.append(record)
   print(code,len(apps),flush=True)
+  if len(visited)%25==0:checkpoint()
  for path in ['legal.asp','vehicles/vehicles/sacfs-34.asp']:
   _,p=fetch(path,args.refresh);sources.append(p)
- classes=[{'id':'sacfs:class:34','name':'34','water_litres_typical':3000,'drive':'4WD','variants':['34R','34P','34URP'],'source_url':BASE+'vehicles/vehicles/sacfs-34.asp','equipment_varies_by_appliance':True}]
- result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':apps,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet)}}
- (ROOT/'data').mkdir(exist_ok=True);(ROOT/'data/reference.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
+ checkpoint()
 if __name__=='__main__':main()

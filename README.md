@@ -18,7 +18,8 @@ explicit incomplete snapshot; review the diff before committing. Requests are
 serial, at most one new request per second, cached under `../../cache/`, with a
 45-second timeout and no automatic retry storm. `--refresh` refetches selected
 pages. No photo requests occur. Raw HTML remains outside the git repository.
-Run `python3 verify.py` after updates. Review coverage/failures and licensing
+A JSON checkpoint is written every 25 successful detail pages, so interrupted
+updates retain useful data and the HTML cache. Run `python3 verify.py` after updates. Review coverage/failures and licensing
 changes before publishing a new snapshot. Fetch failures are recorded; completeness
 is never claimed unless every index entry was visited.
 
@@ -29,7 +30,9 @@ is never claimed unless every index entry was visited.
   retained; codes are source identifiers, not assumed callsign abbreviations.
 - Appliance IDs identify a named source listing within a station, not a permanent
   chassis identity. A replacement can retain a name and change registration.
-  Registration is retained separately. Do not merge by class number alone.
+  Registration is retained separately. Duplicate names within a station receive a
+  registration suffix, or a deterministic fact hash when registration is absent.
+  Do not merge by class number alone.
 - Station/group/region distinction is not inferred from names. Current station
   index membership and appliance index membership are separate booleans.
   Source indexes disagree in scope; absence does not establish decommissioning.
