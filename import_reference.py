@@ -34,46 +34,49 @@ def main():
   normalized=[]; identities={}
   for item in apps:
    appliance=dict(item)
-   identity=(appliance['station_id'],appliance['name'],appliance['registration'])
-   if appliance['registration'] and identity in identities:
+   identity=appliance['id']
+   if identity in identities:
     previous=identities[identity]
-    conflicts={key for key,value in appliance.items() if key!='id' and value is not None and previous[key] is not None and value!=previous[key]}
-    if not conflicts:
-     for key,value in appliance.items():
-      if previous[key] is None:previous[key]=value
-     continue
+    for key,value in appliance.items():
+     if key in previous.get('source_conflicts',{}):
+      if value is not None and value not in previous['source_conflicts'][key]:previous['source_conflicts'][key].append(value)
+      continue
+     if previous.get(key) is None:previous[key]=value
+     elif value is not None and value!=previous.get(key):
+      conflicts=previous.setdefault('source_conflicts',{})
+      values=conflicts.setdefault(key,[previous[key]])
+      if value not in values:values.append(value)
+      previous[key]=None
+    continue
    identities[identity]=appliance;normalized.append(appliance)
-  by_name={}
-  for appliance in normalized:
-   by_name.setdefault((appliance['station_id'],appliance['name']),[]).append(appliance)
-  for group in by_name.values():
-   if len(group)>1:
-    for appliance in group:
-     base='sacfs:appliance:'+appliance['station_id'].split(':')[-1]+':'+re.sub('[^A-Z0-9]+','-',appliance['name'].upper()).strip('-')
-     disambiguator=appliance['registration'] or hashlib.sha256(json.dumps({k:v for k,v in appliance.items() if k!='id'},sort_keys=True).encode()).hexdigest()[:12]
-     if sum(other['registration']==appliance['registration'] for other in group)>1:
-      disambiguator+='-'+hashlib.sha256(json.dumps({k:v for k,v in appliance.items() if k!='id'},sort_keys=True).encode()).hexdigest()[:12]
-     appliance['id']=base+':'+re.sub('[^A-Z0-9]+','-',disambiguator.upper()).strip('-')
-  result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':normalized,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet)}}
+  result={'schema_version':1,'data_license':'CC-BY-SA-4.0','third_party_rights':'See RIGHTS.md; no photo or prose redistribution licence inferred','stations':stations,'appliances':normalized,'classes':classes,'sources':sources,'coverage':{'current_station_index_count':len(current),'appliance_index_count':len(fleet),'detail_pages_visited':visited,'detail_page_failures':failed,'complete_appliance_inventory':len(visited)==len(fleet) and not failed}}
   (ROOT/'data').mkdir(exist_ok=True);(ROOT/'data/reference.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
  codes=sorted(fleet,key=lambda c:(c not in ('SEAF','SLSB'),c not in current,c))[:args.limit]
  for code in codes:
   url='vehicles/Appliance_Display.asp?Service_Code=SACFS&Station_Code='+urllib.parse.quote(code)
   try:s,p=fetch(url,args.refresh)
   except Exception as e:failed.append({'station_code':code,'error':str(e)});continue
-  sources.append(p);visited.append(code)
-  if 'Vehicles &amp; Appliances' not in s:continue
+  sources.append(p)
+  valid=('Vehicles &amp; Appliances' in s and 'Appliances - ' in s
+         and re.search(r'name="Station_Code"\s+value="'+re.escape(code)+r'"',s,re.I)
+         and re.search(r'name="Service_Code"\s+value="SACFS"',s,re.I))
+  if not valid:
+   failed.append({'station_code':code,'error':'unexpected detail layout or station/service identity'});continue
+  visited.append(code)
   updated=re.search(r'last updated on\s*([^<]+)',s,re.I)
   photo_credits={text(name):text(credit) for name,credit in re.findall(r'<BR>\s*([^<]+)<BR>\s*Picture by ([^<]+)',s,re.I)}
   body=s.split('Vehicles &amp; Appliances',1)[1]
   blocks=re.split(r'<TD WIDTH="25%"[^>]*>',body,flags=re.I)[1:]
   for block in blocks:
    name=text(block.split('</TD>',1)[0]);m=re.search(r'<a\s+Href="([^"]+)">([^<]+)</a>\s*<br>Make and Model:\s*(.*?)\s*<FONT',block,re.I|re.S)
-   if not m:continue
+   if not m:
+    failed.append({'station_code':code,'error':'unparsed appliance row'});continue
    flat=text(block);reg=re.search(r'Registration Number:\s*([A-Za-z0-9 -]+?)(?:\s+Equipment:|$)',flat)
    registration=reg.group(1).strip() if reg else None
    unit_key=re.sub('[^A-Z0-9]+','-',name.upper()).strip('-')
-   record={'id':'sacfs:appliance:'+code+':'+unit_key,'station_id':'sacfs:station:'+code,'name':name,'registration':registration,'source_updated_text':text(updated.group(1)) if updated else None,'make_model':text(m.group(3)) or None,'class_id':'sacfs:class:'+pathlib.PurePosixPath(m.group(1)).stem.removeprefix('sacfs-').upper(),'class_source_url':urllib.parse.urljoin(BASE,m.group(1)),'source_url':p['url'],'operational_status':'listed_at_source','photo':{'page_url':p['url'],'credit':photo_credits.get(name),'rights_status':'conflicting-notices','redistribution_allowed':None,'image_url':None}}
+   listing_key='sacfs:appliance:'+code+':'+unit_key
+   suffix=re.sub('[^A-Z0-9]+','-',registration.upper()).strip('-') if registration else 'UNREGISTERED-'+hashlib.sha256((name+'|'+m.group(1)).encode()).hexdigest()[:12].upper()
+   record={'id':listing_key+':'+suffix,'listing_key':listing_key,'id_stability':'registration-aware-listing' if registration else 'provisional','station_id':'sacfs:station:'+code,'name':name,'registration':registration,'source_updated_text':text(updated.group(1)) if updated else None,'make_model':text(m.group(3)) or None,'class_id':'sacfs:class:'+pathlib.PurePosixPath(m.group(1)).stem.removeprefix('sacfs-').upper(),'class_source_url':urllib.parse.urljoin(BASE,m.group(1)),'source_url':p['url'],'operational_status':'listed_at_source','photo':{'page_url':p['url'],'credit':photo_credits.get(name),'rights_status':'conflicting-notices','redistribution_allowed':None,'image_url':None}}
    for field,label in [('water_litres','Water Capacity'),('foam_litres','Foam Quantity')]:
     match=re.search(label+r':\s*(\d+)\s*Litres',flat);record[field]=int(match.group(1)) if match else None
    apps.append(record)

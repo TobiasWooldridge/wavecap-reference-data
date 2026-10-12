@@ -28,11 +28,15 @@ is never claimed unless every index entry was visited.
 - `schema_version`: 1. IDs are namespaced strings, never radio IDs.
 - Station IDs: `sacfs:station:<source Station_Code>`. Service is independently
   retained; codes are source identifiers, not assumed callsign abbreviations.
-- Appliance IDs identify a named source listing within a station, not a permanent
-  chassis identity. A replacement can retain a name and change registration.
-  Registration is retained separately. Duplicate names within a station receive a
-  registration suffix, or a deterministic fact hash when registration is absent.
-  Do not merge by class number alone.
+- Appliance IDs are registration-aware source-listing identities. The registration
+  suffix is always present when known, so importing another same-named vehicle
+  does not change an existing ID. `listing_key` preserves the station/name grouping
+  and may match multiple vehicles. These IDs do not claim a permanent chassis
+  identity: source name, station or registration changes require re-verification.
+  Missing-registration IDs are explicitly `provisional`, derived from name/class.
+  Compatible repeated rows merge missing fields; contradictory repeated fields
+  become null with alternatives retained in `source_conflicts`. Do not merge by
+  class number alone or treat a named listing_key as unique without checking.
 - Station/group/region distinction is not inferred from names. Current station
   index membership and appliance index membership are separate booleans.
   Source indexes disagree in scope; absence does not establish decommissioning.

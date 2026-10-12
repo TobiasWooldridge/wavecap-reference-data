@@ -29,7 +29,9 @@ python3 cfs-reference/lookup.py --station-id sacfs:station:SLSB
 ```
 
 Application-local, explicitly verified identity mappings can point at `station.id`
-and `appliance.id`. Keep those mappings outside this public repository. The
+and `appliance.id` (Seaford 34: `sacfs:appliance:SEAF:SEAFORD-34:S659AQX`).
+`listing_key` is a station/name grouping, not a guaranteed unique vehicle. IDs
+always include the public registration when known; unregistered IDs are provisional. Keep those mappings outside this public repository. The
 adapter result contains station, exact matching appliance records, attribution,
 licence and whether that station detail page has been imported. An empty
 appliance list with `detail_page_imported=false` is incomplete coverage, not proof

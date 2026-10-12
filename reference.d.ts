@@ -13,6 +13,9 @@ export interface StationReference {
 export interface ApplianceReference {
   id: string;
   station_id: string;
+  listing_key: string;
+  id_stability: 'registration-aware-listing' | 'provisional';
+  source_conflicts?: Record<string, unknown[]>;
   name: string;
   registration: string | null;
   source_updated_text: string | null;

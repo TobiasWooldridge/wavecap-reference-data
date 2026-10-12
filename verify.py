@@ -15,6 +15,8 @@ for s in d['stations']:
  assert s['operational_status']=='unknown'
 for a in d['appliances']:
  assert a['id'] not in seen,a['id'];seen.add(a['id'])
+ assert a['id'].startswith(a['listing_key']+':')
+ assert a['id_stability'] in ('registration-aware-listing','provisional')
  assert a['station_id'] in station_ids;url(a['source_url']);url(a['class_source_url'])
  assert a['name'] and (a['make_model'] is None or isinstance(a['make_model'],str))
  for field in ('water_litres','foam_litres'): assert a[field] is None or isinstance(a[field],int) and a[field]>=0
