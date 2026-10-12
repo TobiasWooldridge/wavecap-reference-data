@@ -15,7 +15,7 @@ Adelaide, as well as CFS Promotions Unit. Credit alone is not a licence.
 This repository independently structures factual identifiers, names, models,
 registrations and numerical capacities, with source links and hashes. It excludes
 source prose, database schema, artwork and photo binaries. The project's own
-arrangement and contributions in data/reference.json are licensed CC BY-SA 4.0;
+arrangement and contributions in data/australia/south-australia/fire/reference.json are licensed CC BY-SA 4.0;
 third-party rights are not relicensed or represented as conclusively cleared.
 Importer/validator code is MIT (LICENSE-CODE). Media records retain
 `rights_status=conflicting-notices`, `redistribution_allowed=null`, and only a

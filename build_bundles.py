@@ -2,7 +2,7 @@
 """Build a small exact-name consumer index; ambiguous names abstain."""
 import collections,hashlib,json,pathlib
 ROOT=pathlib.Path(__file__).resolve().parent
-source_path=ROOT/'data/reference.json'
+source_path=ROOT/'data/australia/south-australia/fire/reference.json'
 source=json.loads(source_path.read_text())
 groups=collections.defaultdict(list)
 for unit in source['appliances']:
@@ -18,7 +18,7 @@ result={'schema_version':1,'bundle_id':'wavecap:fire-unit-labels:v1','source_sha
 (ROOT/'bundles').mkdir(exist_ok=True)
 (ROOT/'bundles/unit-labels.v1.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':'))+'\n')
 print(f'Generated {len(rows)} exact label rows; omitted {len(ambiguous)} ambiguous names')
-talkgroup_path=ROOT/'datasets/radio/sascan-sagrn-talkgroups.v1.json'
+talkgroup_path=ROOT/'data/australia/south-australia/radio/sascan-sagrn-talkgroups.v1.json'
 if talkgroup_path.exists():
     archive=json.loads(talkgroup_path.read_text());provenance=archive['provenance']
     talkgroups={'schema_version':1,'bundle_id':'wavecap:sagrn-talkgroups:v1','source_id':'sagrn','source_sha256':hashlib.sha256(talkgroup_path.read_bytes()).hexdigest(),'publisher':provenance['publisher'],'original_url':provenance['original_url'],'archive_url':provenance['archive_url'],'source_updated_date':provenance['source_updated_date'],'capture_datetime':provenance['capture_datetime'],'upstream_license':None,'contribution_license':'CC-BY-SA-4.0','precedence':'reference seeds only; never overrides configured/operator names','rows':[{'talkgroup_id':r['talkgroup_id_decimal'],'talkgroup_id_hex':r['talkgroup_id_hex'],'name':r['name'],'category':r['label_variants'][0]['category'],'human_channel_number':r['label_variants'][0]['human_channel_number']} for r in archive['records'] if not r['has_source_conflict']],'conflicting_talkgroup_ids':[r['talkgroup_id_decimal'] for r in archive['records'] if r['has_source_conflict']]}

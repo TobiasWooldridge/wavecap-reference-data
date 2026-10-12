@@ -36,7 +36,7 @@ operator overrides retain precedence. Four conflicting archived IDs are omitted
 from this seed and retained in the full source dataset. Preserve publisher,
 original/archive citation and capture/update dates in consumers.
 
-`datasets/radio/operator-confirmed-radio-units.v1.json` contains six explicitly
+`data/australia/south-australia/radio/operator-confirmed-radio-units.v1.json` contains six explicitly
 curated confirmations, exact source/radio scope and per-record validity. It is
 not a live database export or a permanent assignment claim. Three older records
 have unknown bounds. Do not infer station role/appliance type for Adelaide Fire
@@ -48,3 +48,12 @@ For richer metadata, use exact `lookup.py --station-id samfs:station:40
 null; typical class figures are never a substitute. Photos are source-page links
 with credit when available; no media licence or image download is inferred.
 Geography stays in its separately licensed database, with source CRS/vintage.
+
+Source organization is geography-first. The fire snapshot is
+`data/australia/south-australia/fire/reference.json`; archived and confirmed
+SA-GRN sources are in `data/australia/south-australia/radio/`. Existing root
+`bundles/` filenames and their contents remain compatible. Read catalog
+`geographic_scope` when discovering datasets: root bundle paths do not imply
+worldwide coverage. Source paths changed from the original public snapshot;
+[the migration manifest](docs/path-migration.json) records every moved file and
+its original SHA-256 at the baseline commit.

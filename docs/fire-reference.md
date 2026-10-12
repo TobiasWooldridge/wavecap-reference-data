@@ -6,7 +6,7 @@ RF identifiers, recordings, transcripts, credentials, photo binaries, or copied
 narrative descriptions. It is a reference snapshot, not an operational dispatch
 or live availability service.
 
-`data/reference.json` is the versioned consumer contract. Attribution must remain
+`data/australia/south-australia/fire/reference.json` is the versioned consumer contract. Attribution must remain
 visible: **Source: SACFS Promotions Unit**, linking each record's `source_url`.
 See RIGHTS.md before displaying media. Code is MIT; this independently arranged
 factual dataset is offered under CC BY-SA 4.0. Neither licence replaces third-party
@@ -14,8 +14,8 @@ rights or resolves the source site's inconsistent notices.
 
 Run `python3 import_reference.py --service SACFS --limit 794` for CFS and
 `python3 import_reference.py --service SAMFS --limit 60` for MFS. These update
-agency snapshots `data/sacfs.agency.json` and `data/samfs.agency.json`, and atomically
-rebuild the combined `data/reference.json`. Other agencies are preserved. Default is indexes only, deliberately replacing that agency’s detail coverage with an
+agency snapshots `data/australia/south-australia/fire/sacfs.agency.json` and `data/australia/south-australia/fire/samfs.agency.json`, and atomically
+rebuild the combined `data/australia/south-australia/fire/reference.json`. Other agencies are preserved. Default is indexes only, deliberately replacing that agency’s detail coverage with an
 explicit incomplete snapshot; review the diff before committing. Requests are
 serial, at most one new request per second, cached in a sibling `cache/` directory (override WAVECAP_REFERENCE_CACHE), with a
 45-second timeout and no automatic retry storm. `--refresh` refetches selected

@@ -6,7 +6,7 @@ parser.add_argument('--station-id',required=True)
 parser.add_argument('--appliance-name')
 parser.add_argument('--vehicle-code',help='exact source-listed MFS code, not a radio ID')
 args=parser.parse_args()
-data=json.loads((pathlib.Path(__file__).parent/'data/reference.json').read_text())
+data=json.loads((pathlib.Path(__file__).parent/'data/australia/south-australia/fire/reference.json').read_text())
 station=next((s for s in data['stations'] if s['id']==args.station_id),None)
 if station is None:parser.error('unknown agency-qualified station ID; no fuzzy fallback')
 units=[a for a in data['appliances'] if a['station_id']==station['id'] and

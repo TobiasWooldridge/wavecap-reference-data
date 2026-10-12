@@ -1,0 +1,100 @@
+{
+  "baseline_commit": "cda3b32c67a915231175a7a6922856f192506114",
+  "files": [
+    {
+      "old_path": "data/reference.json",
+      "path": "data/australia/south-australia/fire/reference.json",
+      "sha256": "aff03f995529d60f87b91a572375ed9dd2dbb11c5aa23f4208b7ff2b7d4681cf"
+    },
+    {
+      "old_path": "data/sacfs.agency.json",
+      "path": "data/australia/south-australia/fire/sacfs.agency.json",
+      "sha256": "4026ba31b16b8285205eee0af4e7642aeb9a3b1e2118ff4cfefba8ced909b7e4"
+    },
+    {
+      "old_path": "data/samfs.agency.json",
+      "path": "data/australia/south-australia/fire/samfs.agency.json",
+      "sha256": "942fe7065ad7629200bd9b8fe6d28953ae9302d904b738f866e8934cb88ed653"
+    },
+    {
+      "old_path": "datasets/geography/NOTICE.md",
+      "path": "RIGHTS-GEOGRAPHY.md",
+      "sha256": "2891e574e05a1d89469d5c33572bab4fe6c19659e6f9e55e8d6c6342ed0b91a3"
+    },
+    {
+      "old_path": "datasets/geography/abs/sa_boundary.tsv",
+      "path": "data/australia/south-australia/geography/abs/sa_boundary.tsv",
+      "sha256": "7dca56a72f037088ffdf5cf5fb1d93689c885aa8156916013523dbfd8a7a81f8"
+    },
+    {
+      "old_path": "datasets/geography/abs/sa_locality_centroids.tsv",
+      "path": "data/australia/south-australia/geography/abs/sa_locality_centroids.tsv",
+      "sha256": "9fa42ef127dd6a974d3c2c7456c43d67ed5b6e74aa7991193c02c5e4e430df84"
+    },
+    {
+      "old_path": "datasets/geography/dew-mapbook/CC_BY.txt",
+      "path": "licenses/dew-mapbook-CC-BY-4.0.txt",
+      "sha256": "f1b3a12762496e4f55938c523823e055a01ee6844faf52bb4b99c4d62e3f96ab"
+    },
+    {
+      "old_path": "datasets/geography/dew-mapbook/MAPS_CfsMapBookExtents_GDA2020.geojson",
+      "path": "data/australia/south-australia/geography/dew-mapbook/MAPS_CfsMapBookExtents_GDA2020.geojson",
+      "sha256": "5a1fa96314a563a4bb5c1f3cb0b99e5d576c9378f78a471b04b7c9fcf415849e"
+    },
+    {
+      "old_path": "datasets/geography/dew-mapbook/MAPS_CfsMapBookPages_GDA2020.geojson",
+      "path": "data/australia/south-australia/geography/dew-mapbook/MAPS_CfsMapBookPages_GDA2020.geojson",
+      "sha256": "bf2baba0244c0c5bc3e42357e1a4c910a8724007abe310799f7a695760e32170"
+    },
+    {
+      "old_path": "datasets/geography/osm/adelaide_streets.tsv",
+      "path": "data/australia/south-australia/geography/osm/adelaide_streets.tsv",
+      "sha256": "dbda05ff02121968a441c1fee9e964e717e39d21cbc639afa9b5f947c08753bb"
+    },
+    {
+      "old_path": "datasets/geography/osm/king_county_streets.tsv",
+      "path": "data/united-states/washington/king-county/geography/osm/king_county_streets.tsv",
+      "sha256": "d0846195e4ce445607a59016c243a6f1365797e4bcfbf246cb66a3c2aadf1f51"
+    },
+    {
+      "old_path": "datasets/geography/osm/sa_osm_places.tsv",
+      "path": "data/australia/south-australia/geography/osm/sa_osm_places.tsv",
+      "sha256": "ecdb6f57f8f6ec21e450856737f21446ab49cc23803866ec13382d8c2ba14834"
+    },
+    {
+      "old_path": "datasets/geography/sa-government/sa_public_places.tsv",
+      "path": "data/australia/south-australia/geography/sa-government/sa_public_places.tsv",
+      "sha256": "94c93aeb910da4c0a99b2979ecc1c1b6ba0c6ffebfa1fbba48bd5d2a8f1b4a44"
+    },
+    {
+      "old_path": "datasets/maritime/LICENSE",
+      "path": "licenses/maritime-MIDs-Apache-2.0.txt",
+      "sha256": "67ebc627fb3ea64113c9b74fe3d58d6c73290b6babea33e4c093cb09745bbb1c"
+    },
+    {
+      "old_path": "datasets/maritime/mmsi_mid.tsv",
+      "path": "data/global/maritime/mmsi_mid.tsv",
+      "sha256": "6dda59be9672eb49554e82bc2486bddc7dd73f7632c7af980f12e2c414c0ea77"
+    },
+    {
+      "old_path": "datasets/radio/operator-confirmed-radio-units.v1.json",
+      "path": "data/australia/south-australia/radio/operator-confirmed-radio-units.v1.json",
+      "sha256": "a34721fc2eb826477540c3661cc02ee5645f4b1b0a3fbd0cebb83a14f6ce79ae"
+    },
+    {
+      "old_path": "datasets/radio/sascan-sagrn-talkgroups.v1.json",
+      "path": "data/australia/south-australia/radio/sascan-sagrn-talkgroups.v1.json",
+      "sha256": "9bcbc67f11474364bbd37cffce5409220221adc34856cb617c27395b649f400d"
+    },
+    {
+      "old_path": "bundles/unit-labels.v1.json",
+      "path": "bundles/unit-labels.v1.json",
+      "sha256": "25f5d1c2a2a0c9efb9eb43e03f971d97b1a1e9aa9513ecfaa9173cf981de1132"
+    },
+    {
+      "old_path": "bundles/sagrn-talkgroups.v1.json",
+      "path": "bundles/sagrn-talkgroups.v1.json",
+      "sha256": "cd202f9473702179bf7febafb571692e35237d527f028abcedd449d93184382d"
+    }
+  ]
+}
