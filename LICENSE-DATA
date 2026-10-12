@@ -1,11 +1,13 @@
-The independently arranged factual dataset and original data contributions in
-this repository are licensed under Creative Commons Attribution-ShareAlike 4.0
-International (CC BY-SA 4.0).
+Original fire-reference factual arrangement/contributions in data/*.json and
+bundles/unit-labels.v1.json are CC BY-SA4.0. Original radio confirmation facts
+and the independently arranged factual SA Scan contribution use the same
+contribution licence. This does not relicense upstream SA Scan content or assert
+an unstated upstream grant. See RIGHTS.md and catalog.json.
 
 Licence terms: https://creativecommons.org/licenses/by-sa/4.0/legalcode.en
-Attribution: CFS Reference contributors; factual sources SACFS Promotions Unit,
-https://www.fire-brigade.asn.au/ ; per-record source URLs are in reference.json.
+Attribution: WaveCap reference contributors and the per-record/source publishers.
 
-Third-party materials are not relicensed. No photo binaries or copied source
-prose are included. The source site's inconsistent notices are documented in
-RIGHTS.md, which must be retained alongside the dataset.
+Other datasets retain their own licences: ABS/SAgovernment/DEW CC BY4.0;
+OSM-derived databases ODbL1.0 (ABS locality labels separately CC BY4.0);
+MID table Apache2.0 with its full upstream licence retained. There is no blanket
+CC licence over this repository. Third-party photos/prose/rawfeeds are excluded.

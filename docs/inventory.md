@@ -1,0 +1,26 @@
+# Reference inventory and publication decisions
+
+Reviewed 2026-10-12. This inventories existing WaveCap references rather than
+assuming every input is licensed for a new public redistribution.
+
+| Existing reference | Decision and exact scope |
+| --- | --- |
+| SACFS/SAMFS Promotions Unit station/appliance indexes | Included: independently arranged identifiers/names/models/capacities and source links; 794 CFS +48 MFS indexed records, 1,274 normalized appliances. All indexed detail pages validated. Current station indexes differ:493 CFS,47 MFS; absence is not proof of closure. Mixed photo notices remain explicit. |
+| UDB / pager capcodes | No standalone UDB database was identified in the inspected source tree. Existing `sagrn_capcodes_observed.csv` is a 218-row [urgmsg.net](https://urgmsg.net/) community snapshot dated2026-07-13. No stated redistribution licence was documented. Deferred; neither Rust seed aliases nor CSV rows are republished under CC. |
+| Community paging pairs | Existing 9,745 pairs from [cfsscan.com](https://cfsscan.com/) were derived from live paging messages, with no stated licence. Excluded: live-message-derived corpus and missing redistribution provenance. No raw pairs or paging content enters git history. |
+| SA-GRN and PSERN talkgroup/site exports | Existing parsed YAML and deployment aliases derive from [RadioReference](https://www.radioreference.com/) exports (SA system8145). No compatible bulk redistribution grant was established. Deferred with upstream provenance; source labels/encryption modes are not copied into a blanket CC dataset. Future additions require exact system scope and documented rights or independent primary sourcing. |
+| Verified radio/unit mappings | Eligible only as explicitly curated operator confirmations with source/system/RF identity, confirmation date, validity limits and truthful operator provenance. They are not public network allocations. No live mapping/evidence database, call text or audio is imported. Six eligible records are included:5240303,5271291,5214914 plus the older explicit confirmations5062003,5271282,5271299. Unknown time bounds remainnull. The separately reviewed/inferred console family is excluded. |
+| ABS SA locality/boundary references | Included separately under CC BY4.0. Locality names represent historical source export keys; original numeric SAL codes and some original retrieval dates are unavailable and not invented. Boundary retains the known input hash and2021 vintage. |
+| OSM SA venues/addresses/facilities | Included as a separate derived ODbL database (74,302 rows, including743 facility rows), with original OSM IDs/bounds and2026-10-07 replication date. ABS containing-locality labels retain CC BY4.0 attribution. No private incident/radio association is added. |
+| Adelaide / King County named-street gazetteers | Included separately under ODbL, as their source headers and build method explicitly identify OpenStreetMap. Representative median/dominant-cluster method and regional bounding filters are documented. Original input snapshot dates/way IDs are unavailable; this limitation is retained in catalog metadata. |
+| Hand-curated King County places seed | Deferred: file lacks per-row source citations and a clear data-specific licence. No inferred completeness/current precision is asserted. |
+| SA retirement-village register join | Included under Government of South Australia CC BY4.0:409 unchanged registered venues,2023 register plusJune2018 spatial data. Exact registration IDs and original source hashes remain. Not individual villas or incident positions. |
+| Official CFS map-book pages/extents | Included from DEW WaterConnect bounded primary archives:968 page polygons +7 extent features, original EPSG:7844 GDA2020. Archive CC_BY notice retained. Book/edition/year and map identifiers remain. |
+| UBD/Gregory commercial street-directory grid | Excluded. Existing runtime documentation explicitly avoids redistributing this commercial grid. Official CFS map-book sources are a distinct reference, not a licence or coordinate conversion for UBD pages. |
+| Hospital emergency-care statements | Existing18 rows for16 hospitals cite [SA Health](https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/hospitals/hospitals) statements. Deferred: verify the precise reuse scope for quoted statements before copying this supplementary table; OSM hospital tags remain within the separate ODbL dataset. Absence of an emergency tag is unknown, not no service. |
+| Maritime MID country table | Included under upstream MIDs Apache2.0 with full licence. Original upstream revision/retrieval date unknown, explicitly retained as such. Factual ITU source linked. |
+| ICAO airline designator seed / OpenSky aircraft database | Deferred: airline seed lacks per-row sources; OpenSky runtime input is not committed and has no established redistribution grant in existing docs. No airframe/operator observation data is imported. |
+
+None of the deferred categories blocks publication of the clearly scoped included
+references. Follow-up work should resolve the exact source/licence/validity gap,
+not simply copy a deployment seed or attach a CC label to upstream material.

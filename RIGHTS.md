@@ -25,3 +25,13 @@ Retain source links, retrieved timestamps, and attribution when adapting the
 dataset. Clearly mark changes and retain CC BY-SA 4.0 for adapted dataset material.
 The application itself keeps its own licence. Source/raw HTML cache is private
 working evidence outside the distributable repository and is not included in git.
+
+# Additional source scopes
+
+See catalog.json for dataset-specific licences. ABS/SAgovernment/DEW references
+retain CC BY4.0 attribution; separate OSM-derived databases retain ODbL1.0 and
+ABS locality attribution; maritime MID data retains Apache2.0. SA Scan archived
+page has no explicit upstream reuse licence in the retained page: only original
+arrangement of factual IDs/short labels is contributed, without asserting an
+upstream grant. Operator confirmations are independently curated contributions
+with no invented public source URL. No mixed blanket relicensing occurs.

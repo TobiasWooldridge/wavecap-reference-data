@@ -1,54 +1,50 @@
-# Reviewable integration recipe
+# Pinned parent integration and consumer contract
 
-Prepared checkout: `/home/thw/cfs-reference/checkout/datarepo` on Dana4.
-No remote exists and no publisher checkout has been modified. SDR's established
-convention is a top-level git submodule named for its repository, so the proposed
-path is `cfs-reference/`.
-
-For an isolated local integration review, the parent integrator can run:
+Intended public origin: `https://github.com/TobiasWooldridge/wavecap-reference-data.git`.
+The SDR parent convention is a top-level git submodule. Proposed path is
+`wavecap-reference-data/`; source publication and parent integration are separate
+commits, both reviewable. The sole parent publisher applies the reviewed gitlink.
 
 ```sh
-git -c protocol.file.allow=always submodule add /home/thw/cfs-reference/checkout/datarepo cfs-reference
-git -C cfs-reference checkout <reviewed-commit>
-python3 cfs-reference/verify.py
+git submodule add https://github.com/TobiasWooldridge/wavecap-reference-data.git wavecap-reference-data
+git -C wavecap-reference-data checkout <reviewed-public-commit>
+python3 wavecap-reference-data/verify.py
+python3 wavecap-reference-data/verify_publication.py
 ```
 
-The absolute file URL is **local review only**. Before publishing a parent commit,
-replace `.gitmodules` URL with the separately approved repository URL, and confirm
-that the reviewed data commit exists there. This worker has not created a public
-remote. Stage `.gitmodules` and `cfs-reference` gitlink together. No application
-code licence change is necessary: retain LICENSE-DATA/RIGHTS alongside data.
+Stage `.gitmodules` and the gitlink together. Never follow an unpinned branch in a
+build or copy datasets into a blanket application-code licence.
 
-## Selective hovercard adapter
+Use `bundles/unit-labels.v1.json` for the small fire-label import. Rows contain
+`service`, `full_label`, `compact_label`, `station_id`, `source_url`,
+`source_updated_text`, stable named `reference_id`, and physical-source
+`reference_ids`. Multiple registrations may share a named unit if agency/station/
+compact label agree. Truly ambiguous names abstain. Match only exact full source
+names after case/whitespace normalization, within the application's verified
+source scope; numeric IDs alone never match.
 
-Offline example (no browser/network/image side effects):
+`St Marys 401` → `MFS 401` (samfs:station:40); `Salisbury 321` → `MFS 321`
+(samfs:station:32); `Seaford 34` → `SEAF 34` (sacfs:station:SEAF).
+Role names remain: `Car 40` → `MFS Car 40`, `Hooklift 01` → `MFS Hooklift 01`,
+`Surge 01` → `MFS Surge 01`; fireboat names keep their role/name. CFS names do
+not acquire an extra CFS prefix. Full source labels remain canonical detail text.
 
-```sh
-python3 cfs-reference/lookup.py --station-id sacfs:station:SEAF --appliance-name 'Seaford 34'
-python3 cfs-reference/lookup.py --station-id sacfs:station:SLSB
-python3 cfs-reference/lookup.py --station-id samfs:station:40 --vehicle-code 401
-python3 cfs-reference/lookup.py --station-id samfs:station:32 --vehicle-code 321
-```
+`bundles/sagrn-talkgroups.v1.json` is a historical reference seed only. Join on
+exact configured source `sagrn` and decimal TGID; do not confuse channel numbers
+or legacy numbers inside a label. Existing configured/curated and verified
+operator overrides retain precedence. Four conflicting archived IDs are omitted
+from this seed and retained in the full source dataset. Preserve publisher,
+original/archive citation and capture/update dates in consumers.
 
-Application-local, explicitly verified identity mappings can point at `station.id`
-and `appliance.id` (Seaford 34: `sacfs:appliance:SEAF:SEAFORD-34:S659AQX`).
-`listing_key` is a station/name grouping, not a guaranteed unique vehicle. IDs
-always include the public registration when known; unregistered IDs are provisional. Keep those mappings outside this public repository. The
-adapter result contains station, exact matching appliance records, attribution,
-licence and whether that station detail page has been imported. An empty
-appliance list with `detail_page_imported=false` is incomplete coverage, not proof
-that the station has no vehicles.
+`datasets/radio/operator-confirmed-radio-units.v1.json` contains six explicitly
+curated confirmations, exact source/radio scope and per-record validity. It is
+not a live database export or a permanent assignment claim. Three older records
+have unknown bounds. Do not infer station role/appliance type for Adelaide Fire
+or the older confirmations. Do not expand neighbouring IDs or transfer mappings
+across systems. Public confirmation URLs are unavailable, explicitly null.
 
-Display name, per-vehicle make/model and water/foam capacities when present.
-Do not substitute typical class figures for missing per-vehicle fields. Photo
-presentation is a source-page link labelled “Vehicle photos and source”, with
-credit if available. `image_url` is null, and no binary is licensed here. Use
-accessible link text and avoid a blank image placeholder. Station icon remains
-fixed; vehicle type metadata is independent of station identity. Class 34 is a
-shared category, not the identifier of a unique vehicle.
-
-SAMFS40 is St Marys, vehicle401 is its source-listed pumper. Vehicle409 is
-a separate pumper-rescue, not a synonym. SAMFS32 Salisbury and SACFS SLSB Salisbury
-are distinct facilities. `compact_label` is ready for display (`MFS 401`, `MFS 321`,
-`SEAF 34`); keep full_label/source/rights available in detail views. No private RF
-identifier joins are provided. Suppress disputed fields listed in source_conflicts.
+For richer metadata, use exact `lookup.py --station-id samfs:station:40
+--vehicle-code 401` or the typed fire contract. Missing per-vehicle specs remain
+null; typical class figures are never a substitute. Photos are source-page links
+with credit when available; no media licence or image download is inferred.
+Geography stays in its separately licensed database, with source CRS/vintage.

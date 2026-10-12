@@ -45,6 +45,9 @@ assert len(seaf)==1 and seaf[0]['water_litres']==3000 and seaf[0]['registration'
 if 'SAMFS' in c['by_service']:
  unit=[a for a in d['appliances'] if a['station_id']=='samfs:station:40' and a['vehicle_code']=='401']
  assert len(unit)==1 and unit[0]['make_model']=='Scania P360' and unit[0]['water_litres']==2500 and unit[0]['foam_litres']==120 and unit[0]['registration']=='XS58JM'
+roles={a['full_label']:a['compact_label'] for a in d['appliances'] if a['service']=='SAMFS'}
+for role in ('Car 40','Hooklift 01','Surge 01'):
+ assert roles[role]=='MFS '+role
 for p in root.rglob('*'):
  if '.git' in p.parts or '__pycache__' in p.parts:continue
  assert p.suffix.lower() not in ('.jpg','.png','.gif','.wav','.mp3','.html'),p

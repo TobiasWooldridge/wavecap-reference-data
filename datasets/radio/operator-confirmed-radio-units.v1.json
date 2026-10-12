@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "dataset_id": "wavecap:operator-confirmed-radio-units:v1",
+  "contribution_license": "CC-BY-SA-4.0",
+  "attribution": "Operator-confirmed WaveCap reference contributions",
+  "input_export_sha256": "b1da4f76561a4012ad6a66efccf9b453e36930cfa7c940646a39421c04e3e80e",
+  "public_confirmation_urls_available": false,
+  "records": [
+    {
+      "source_id": "sagrn",
+      "radio_id": "5240303",
+      "callsign": "SALISBURY SES",
+      "display_label": "Salisbury SES",
+      "compact_label": null,
+      "station_name": null,
+      "valid_from": "2026-10-11T12:52:39.330776Z",
+      "valid_until": null,
+      "note": "User explicitly confirmed RF 5240303 as Salisbury SES; no neighboring-radio inference or automatic expiry.",
+      "recorded_at": "2026-10-12T07:35:59.746115Z",
+      "id": "sagrn:p25:radio:5240303",
+      "identity_scope": {
+        "source_id": "sagrn",
+        "network": "South Australian Government Radio Network",
+        "protocol": "P25",
+        "wacn": null,
+        "rf_system_id": null,
+        "scope_limit": "exact configured source sagrn; do not transfer to another system/source"
+      },
+      "provenance": {
+        "kind": "operator-confirmation",
+        "confirmed_by": "thw (explicit user confirmation)",
+        "recorded_at": "2026-10-12T07:35:59.746115Z",
+        "public_confirmation_url": null,
+        "confirmation_basis": "explicit operator confirmation; no raw conversation/evidence included"
+      },
+      "validity_note": "No automatic expiry was supplied. This records an explicit assignment effective from valid_from, not an immutable radio/chassis identity.",
+      "public_reference": null,
+      "preferred_compact_label": null
+    },
+    {
+      "source_id": "sagrn",
+      "radio_id": "5271291",
+      "callsign": "SALISBURY321",
+      "display_label": "Salisbury321",
+      "compact_label": "321",
+      "station_name": "Salisbury",
+      "valid_from": "2026-10-09T00:00:14.851176Z",
+      "valid_until": null,
+      "note": "User explicitly confirmed RF 5271291 as Salisbury321; no neighboring-radio inference or automatic expiry.",
+      "recorded_at": "2026-10-12T07:36:04.746951Z",
+      "id": "sagrn:p25:radio:5271291",
+      "identity_scope": {
+        "source_id": "sagrn",
+        "network": "South Australian Government Radio Network",
+        "protocol": "P25",
+        "wacn": null,
+        "rf_system_id": null,
+        "scope_limit": "exact configured source sagrn; do not transfer to another system/source"
+      },
+      "provenance": {
+        "kind": "operator-confirmation",
+        "confirmed_by": "thw (explicit user confirmation)",
+        "recorded_at": "2026-10-12T07:36:04.746951Z",
+        "public_confirmation_url": null,
+        "confirmation_basis": "explicit operator confirmation; no raw conversation/evidence included"
+      },
+      "validity_note": "No automatic expiry was supplied. This records an explicit assignment effective from valid_from, not an immutable radio/chassis identity.",
+      "public_reference": {
+        "station_id": "samfs:station:32",
+        "listing_key": "samfs:appliance:32:SALISBURY-321",
+        "source_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=32",
+        "basis": "explicit confirmed unit name and exact public source appliance name; no numeric inference"
+      },
+      "preferred_compact_label": "MFS 321"
+    },
+    {
+      "source_id": "sagrn",
+      "radio_id": "5214914",
+      "callsign": "SEAFORD 34",
+      "display_label": "Seaford 34",
+      "compact_label": "SEAF 34",
+      "station_name": "Seaford",
+      "valid_from": "2026-10-12T07:18:13.212414Z",
+      "valid_until": null,
+      "note": "User explicitly confirmed RF 5214914 as Seaford 34; no neighboring-radio inference or automatic expiry.",
+      "recorded_at": "2026-10-12T07:36:09.102826Z",
+      "id": "sagrn:p25:radio:5214914",
+      "identity_scope": {
+        "source_id": "sagrn",
+        "network": "South Australian Government Radio Network",
+        "protocol": "P25",
+        "wacn": null,
+        "rf_system_id": null,
+        "scope_limit": "exact configured source sagrn; do not transfer to another system/source"
+      },
+      "provenance": {
+        "kind": "operator-confirmation",
+        "confirmed_by": "thw (explicit user confirmation)",
+        "recorded_at": "2026-10-12T07:36:09.102826Z",
+        "public_confirmation_url": null,
+        "confirmation_basis": "explicit operator confirmation; no raw conversation/evidence included"
+      },
+      "validity_note": "No automatic expiry was supplied. This records an explicit assignment effective from valid_from, not an immutable radio/chassis identity.",
+      "public_reference": {
+        "station_id": "sacfs:station:SEAF",
+        "listing_key": "sacfs:appliance:SEAF:SEAFORD-34",
+        "source_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SACFS&Station_Code=SEAF",
+        "basis": "explicit confirmed unit name and exact public source appliance name; no numeric inference"
+      },
+      "preferred_compact_label": "SEAF 34"
+    },
+    {
+      "id": "sagrn:p25:radio:5062003",
+      "source_id": "sagrn",
+      "radio_id": "5062003",
+      "callsign": "ADELAIDE_FIRE",
+      "display_label": "Adelaide Fire",
+      "compact_label": null,
+      "preferred_compact_label": null,
+      "station_name": null,
+      "valid_from": null,
+      "valid_until": null,
+      "public_reference": null,
+      "identity_scope": {
+        "source_id": "sagrn",
+        "network": "South Australian Government Radio Network",
+        "protocol": "P25",
+        "wacn": null,
+        "rf_system_id": null,
+        "scope_limit": "exact configured source sagrn; do not transfer to another system/source"
+      },
+      "provenance": {
+        "kind": "operator-confirmation",
+        "confirmed_by": "project operator (explicit user confirmation)",
+        "confirmation_date": "2026-10-11",
+        "public_confirmation_url": null,
+        "curated_source_revision": "b7966036f",
+        "confirmation_basis": "timeless curated operator-confirmation table; no private code/evidence/chat included"
+      },
+      "validity_note": "Original curated table supplied no historical lower/upper bound. Null means unknown, not proof of permanent validity. Station role and appliance type remain unconfirmed; Adelaide main-station role is not asserted."
+    },
+    {
+      "id": "sagrn:p25:radio:5271282",
+      "source_id": "sagrn",
+      "radio_id": "5271282",
+      "callsign": "ELZ339",
+      "display_label": "Elizabeth 339",
+      "compact_label": null,
+      "preferred_compact_label": null,
+      "station_name": "Elizabeth Metropolitan Fire Service",
+      "valid_from": null,
+      "valid_until": null,
+      "public_reference": null,
+      "identity_scope": {
+        "source_id": "sagrn",
+        "network": "South Australian Government Radio Network",
+        "protocol": "P25",
+        "wacn": null,
+        "rf_system_id": null,
+        "scope_limit": "exact configured source sagrn; do not transfer to another system/source"
+      },
+      "provenance": {
+        "kind": "operator-confirmation",
+        "confirmed_by": "project operator (explicit user confirmation)",
+        "confirmation_date": "2026-10-11",
+        "public_confirmation_url": null,
+        "curated_source_revision": "b7966036f",
+        "confirmation_basis": "timeless curated operator-confirmation table; no private code/evidence/chat included"
+      },
+      "validity_note": "Original curated table supplied no historical lower/upper bound. Null means unknown, not proof of permanent validity. Station role and appliance type remain unconfirmed; Adelaide main-station role is not asserted."
+    },
+    {
+      "id": "sagrn:p25:radio:5271299",
+      "source_id": "sagrn",
+      "radio_id": "5271299",
+      "callsign": "PROSPECT377",
+      "display_label": "Prospect 377",
+      "compact_label": null,
+      "preferred_compact_label": null,
+      "station_name": "Prospect Metropolitan Fire Service",
+      "valid_from": null,
+      "valid_until": null,
+      "public_reference": null,
+      "identity_scope": {
+        "source_id": "sagrn",
+        "network": "South Australian Government Radio Network",
+        "protocol": "P25",
+        "wacn": null,
+        "rf_system_id": null,
+        "scope_limit": "exact configured source sagrn; do not transfer to another system/source"
+      },
+      "provenance": {
+        "kind": "operator-confirmation",
+        "confirmed_by": "project operator (explicit user confirmation)",
+        "confirmation_date": "2026-10-11",
+        "public_confirmation_url": null,
+        "curated_source_revision": "b7966036f",
+        "confirmation_basis": "timeless curated operator-confirmation table; no private code/evidence/chat included"
+      },
+      "validity_note": "Original curated table supplied no historical lower/upper bound. Null means unknown, not proof of permanent validity. Station role and appliance type remain unconfirmed; Adelaide main-station role is not asserted."
+    }
+  ]
+}

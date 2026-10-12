@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Bounded, cached, agency-separated factual import. No image fetching."""
-import argparse, datetime, hashlib, html, json, pathlib, re, time, urllib.parse, urllib.request
+import argparse, datetime, hashlib, html, json, os, pathlib, re, time, urllib.parse, urllib.request
 BASE = 'https://www.fire-brigade.asn.au/'
 ROOT = pathlib.Path(__file__).resolve().parent
-CACHE = ROOT.parent.parent / 'cache'
+CACHE = pathlib.Path(os.environ.get('WAVECAP_REFERENCE_CACHE', ROOT.parent / 'cache'))
 SERVICES = {'SACFS': 'sacfs', 'SAMFS': 'samfs'}
 NULLABLE_FACTS = {'make_model', 'registration', 'water_litres', 'foam_litres', 'source_updated_text'}
 
@@ -164,11 +164,10 @@ def import_service(service, limit, refresh):
             listing_key = namespace + ':appliance:' + code + ':' + re.sub('[^A-Z0-9]+', '-', name.upper()).strip('-')
             suffix = (re.sub('[^A-Z0-9]+', '-', registration.upper()).strip('-') if registration else
                       'UNREGISTERED-' + hashlib.sha256((name + '|' + match.group(1)).encode()).hexdigest()[:12].upper())
-            vehicle_code_match = re.search(r'\b(\d+)\s*$', name) if service == 'SAMFS' else None
-            vehicle_code = vehicle_code_match.group(1) if vehicle_code_match else None
             facility = (current[code] if code in current else fleet[code])['facility_name']
             cfs_suffix = name[len(facility):].strip() if name.startswith(facility + ' ') else None
-            compact = ('MFS ' + vehicle_code if vehicle_code else name) if service == 'SAMFS' else (code + ' ' + cfs_suffix if cfs_suffix else name)
+            vehicle_code = cfs_suffix if service == 'SAMFS' and cfs_suffix and cfs_suffix.isdecimal() else None
+            compact = ('MFS ' + vehicle_code if vehicle_code else 'MFS ' + name) if service == 'SAMFS' else (code + ' ' + cfs_suffix if cfs_suffix else name)
             class_name = pathlib.PurePosixPath(match.group(1)).stem.removeprefix(namespace + '-').upper()
             record = {
                 'id': listing_key + ':' + suffix, 'listing_key': listing_key,

@@ -1,78 +1,46 @@
-# CFS and MFS factual reference
+# WaveCap reference data
 
-Independent normalized public-source facts from the SACFS Promotions Unit,
-https://www.fire-brigade.asn.au/ . This repository contains no radio observations,
-RF identifiers, recordings, transcripts, credentials, photo binaries, or copied
-narrative descriptions. It is a reference snapshot, not an operational dispatch
-or live availability service.
+Versioned, source-attributed reference data for radio monitoring applications.
+This repository separates public factual references from application code and
+from live operational evidence. Each dataset keeps its own licence; this is not
+one blanket-licensed database.
 
-`data/reference.json` is the versioned consumer contract. Attribution must remain
-visible: **Source: SACFS Promotions Unit**, linking each record's `source_url`.
-See RIGHTS.md before displaying media. Code is MIT; this independently arranged
-factual dataset is offered under CC BY-SA 4.0. Neither licence replaces third-party
-rights or resolves the source site's inconsistent notices.
+| Dataset | Location | Licence / source |
+| --- | --- | --- |
+| CFS/MFS stations, vehicles and types | `data/reference.json`, agency snapshots | Original factual arrangement CC BY-SA4.0; [SACFS Promotions Unit](https://www.fire-brigade.asn.au/); [mixed source notices](RIGHTS.md) |
+| Small exact appliance-label bundle | `bundles/unit-labels.v1.json` | CC BY-SA4.0; same per-row source citations |
+| SA locality centres and boundary | `datasets/geography/abs/` | [ABS, CC BY4.0](https://www.abs.gov.au/website-privacy-copyright-and-disclaimer) |
+| SA places/facilities and regional streets | `datasets/geography/osm/` | [OpenStreetMap contributors, ODbL1.0](https://www.openstreetmap.org/copyright); ABS locality labels separately CC BY4.0 |
+| SA retirement-village facility references | `datasets/geography/sa-government/` | [Government of South Australia, CC BY4.0](https://data.sa.gov.au/data/dataset/retirement-villages-register) |
+| Official CFS map-book pages/extents | `datasets/geography/dew-mapbook/` | [DEW WaterConnect](https://www.waterconnect.sa.gov.au/Content/Downloads/DEW/MAPS_CfsMapBookPages_geojson.zip), archive CC BY4.0 notice retained |
+| Archived SA Scan factual talkgroups | `datasets/radio/`, `bundles/sagrn-talkgroups.v1.json` | [SA Scan archive](https://web.archive.org/web/20251225115143/https://www.sascan.net.au/?page=infPages/GRNTalkgroups); upstream licence unstated, factual contribution scope only |
+| Explicit operator RF/unit confirmations | `datasets/radio/operator-confirmed-radio-units.v1.json` | Original factual contributions CC BY-SA4.0; truthful per-record confirmation provenance, no public confirmation URL |
+| Maritime identification digits | `datasets/maritime/` | [MIDs](https://github.com/michaeljfazio/MIDs), Apache2.0 licence retained; [ITU factual source](https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/mid.aspx) |
 
-Run `python3 import_reference.py --service SACFS --limit 794` for CFS and
-`python3 import_reference.py --service SAMFS --limit 60` for MFS. These update
-agency snapshots `data/sacfs.agency.json` and `data/samfs.agency.json`, and atomically
-rebuild the combined `data/reference.json`. Other agencies are preserved. Default is indexes only, deliberately replacing that agency’s detail coverage with an
-explicit incomplete snapshot; review the diff before committing. Requests are
-serial, at most one new request per second, cached under `../../cache/`, with a
-45-second timeout and no automatic retry storm. `--refresh` refetches selected
-pages. No photo requests occur. Raw HTML remains outside the git repository.
-A JSON checkpoint is written every 25 successful detail pages, so interrupted
-updates retain useful data and the HTML cache. Run `python3 verify.py` after updates. Review coverage/failures and licensing
-changes before publishing a new snapshot. Fetch failures are recorded; completeness
-is never claimed unless every index entry was visited.
+[Catalog](catalog.json) records namespaces, stable-key limits, hashes, attribution,
+source URLs, known dates and validity for every included dataset. Unknown original
+retrieval dates remain null; a review date is not silently substituted for them.
+[Inventory](docs/inventory.md) records excluded and deferred sources.
 
-## Consumer contract
+The consumer bundle contains exact full names, compact labels, agency, reference
+ID and source citations. `MFS 401`, `MFS 321` and `SEAF 34` are display labels;
+full names and source identities remain available. Ambiguous names abstain.
+A numeric radio ID alone never identifies a vehicle through this bundle.
 
-- `schema_version`: 1. IDs are namespaced strings, never radio IDs.
-- Station IDs: `sacfs:station:<source Station_Code>` or `samfs:station:<code>`. Service is independently
-  retained; codes are source identifiers, not assumed callsign abbreviations.
-- Appliance IDs are registration-aware source-listing identities. The registration
-  suffix is always present when known, so importing another same-named vehicle
-  does not change an existing ID. `listing_key` preserves the station/name grouping
-  and may match multiple vehicles. These IDs do not claim a permanent chassis
-  identity: source name, station or registration changes require re-verification.
-  Missing-registration IDs are explicitly `provisional`, derived from name/class.
-  Compatible repeated rows merge missing fields. Contradictory nullable numerical/model
-  facts become null with alternatives retained in `source_conflicts`; required
-  structure/links retain their first source variant and record alternatives.
-  Consumers must suppress any disputed field rather than treating the retained
-  structural variant as resolved. Do not merge by
-  class number alone or treat a named listing_key as unique without checking.
-- Full labels retain source names. Compact labels are `SEAF 34` for CFS and
-  `MFS 401` for MFS. MFS vehicle codes come from exact public source appliance
-  names. Facility numbers come from explicit source “Station” labels. Neither
-  a radio ID nor a universal last-digit type splitter is used. Per-class source
-  type-code variants are retained separately; individual roles come from their
-  own source type links.
-- Coverage visit entries are agency-qualified station IDs; `coverage.by_service`
-  retains each agency’s completeness/failures separately.
-- Station/group/region distinction is not inferred from names. Current station
-  index membership and appliance index membership are separate booleans.
-  Source indexes disagree in scope; absence does not establish decommissioning.
-- Appliance `operational_status=listed_at_source` means source listing only.
-  Retrieval time appears in sources; source information may be older.
-- `class_id` is a type, e.g. `sacfs:class:34`; class specifications are typical,
-  while appliance water/foam/model facts are per listing. Missing values are null.
-- `photo.page_url` links to the original source page. `image_url=null` deliberately:
-  no hotlink/download permission is inferred. `redistribution_allowed=null` means
-  unresolved, not permission. A UI can show a source link immediately; photo
-  previews require separately verified per-image rights and credits.
-- Equipment is not asserted from typical class lists. Source appliance pages
-  remain available for additional factual verification.
+Read [fire reference contract](docs/fire-reference.md), [typed interface](reference.d.ts),
+[update instructions](docs/updates.md) [radio provenance](docs/radio-reference.md), and [parent integration](INTEGRATION.md).
+Run `python3 verify.py`, `python3 verify_publication.py`, and
+`python3 -m unittest test_reference.py` offline. `python3 build_bundles.py` rebuilds
+the small consumer file deterministically from the committed fire snapshot.
 
-## Parent integration
+This is a snapshot reference, not a dispatch or live availability service.
+Public mapped locations are venue/feature references, not incident positions.
+CFS map-book data is distinct from commercial UBD/Gregory grids; original GDA2020
+coordinates are declared, not relabelled as WGS84.
 
-The SDR parent uses git submodules. Proposed path is `cfs-reference/`; pin a reviewed
-commit from this independent repository after its public remote is created and
-reviewed. Do not copy this dataset into the application-code licence. Read the
-JSON during a build/server import, expose only the fields needed for cards, and
-retain source/attribution/rights fields. Use explicit application mappings from
-private local observations to these public IDs outside this repository. No fuzzy
-identity merge: Salisbury CFS, MFS and SES are different services/records.
-
-No parent checkout or publication is changed by the importer. Repository creation,
-remote URL and pinned parent gitlink are coordinated by the parent publisher.
+Photos remain source-page links because the source site's footer CC notice and
+copyright page conflict. No photo binaries or copied narrative descriptions are
+included. No raw audio, incident transcripts, live inference/evidence databases,
+credentials or private conversation contents belong here. Confirmed radio/unit
+records, when included, are explicitly curated confirmations with scoped identity
+and validity; they are not inferred from traffic or presented as public allocations.

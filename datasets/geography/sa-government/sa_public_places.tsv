@@ -1,0 +1,418 @@
+# GENERATED public facility register join; do not hand-edit.
+# Source: https://data.sa.gov.au/data/dataset/retirement-villages-register
+# Government of South Australia, CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+# Register: 2023. Spatial point: June 2018. Name/address/locality/registration ID must agree.
+# Coordinates are facility references, not individual villas or incident positions.
+# register_sha256=67eb4f68a29e9fbdf85a4a78f6b97e4df5043542487f43973d38f35982df5715
+# spatial_sha256=4cdcef69c22e5f2e6f04fc8c8606aa4919b2408361d3c3c721ed1dd3f1b518ce
+# rows=409; latest_register_rows=520
+# name	locality	address	lat	lng	registration_id
+ACH Angove Park Drive	TEA TREE GULLY	1 Angove Park Drive	-34.821203	138.722330	RV146
+ACH Broad Street	MARDEN	3-7 Broad Street	-34.896162	138.637505	RV136
+ACH Cator Street	GLENSIDE	42 & 42a Cator Street	-34.942668	138.642013	RV121
+ACH Cornish Street	STEPNEY	5 Cornish Street	-34.910396	138.627999	RV145
+ACH East Terrace	KENSINGTON GARDENS	55 East Terrace	-34.925049	138.665636	RV126
+ACH Elliot Court	CAMPBELLTOWN	127 Montacute Road	-34.887862	138.671525	RV113
+ACH Fred McCallum Court	GLYNDE	142 Marian Road	-34.900581	138.652375	RV123
+ACH Genders Court	CAMPBELLTOWN	7 Weymouth Street	-34.886972	138.672366	RV114
+ACH Hampden Street	FIRLE	5 Hampden Street	-34.905281	138.654714	RV118
+ACH High Street	WILLUNGA	21 High Street	-35.272352	138.556671	RV149
+ACH James Evans Court	MAGILL	122 St Bernards Road	-34.901113	138.674426	RV133
+ACH KC & Betty Wilson	JOSLIN	132 First Avenue	-34.901864	138.631866	RV125
+ACH Kapara Mews	GLENELG	80 Moseley Street	-34.989542	138.514752	RV119
+ACH Lady Grenfell Price Grove	KLEMZIG	67-75 Windsor Grove	-34.877578	138.646523	RV128
+ACH Loveday Street	GOOLWA	4 Loveday Street	-35.501792	138.784340	RV124
+ACH Manson Court	ROSTREVOR	2 Sparks Terrace	-34.897822	138.676297	RV142
+ACH McKay Avenue	CHRISTIES BEACH	16-18 McKay Avenue	-35.137451	138.482140	RV115
+ACH Menzies Marden	MARDEN	Cnr Kent Street & Wear Ave	-34.894299	138.640415	RV138
+ACH Millikan Grove	MARDEN	51 Marden Road	-34.894540	138.638252	RV137
+ACH Moir Court	MAGILL	6 Moir Court	-34.906902	138.667874	RV131
+ACH Penzance Street	GLENELG	89 Penzance Street	-34.989747	138.519456	RV120
+ACH Perry Park	PORT NOARLUNGA	100 Murray Road	-35.146936	138.479422	RV141
+ACH Pickering Court	FELIXSTOW	25 Kapoola Avenue	-34.889304	138.647546	RV117
+ACH Pullin Court	ROSTREVOR	5 Sparks Terrace	-34.896991	138.676039	RV143
+ACH Riverview Drive	PORT NOARLUNGA	Riverview Drive	-35.147084	138.480804	RV140
+ACH Sir Keith Wilson Court	MAGILL	67 St Bernards Road	-34.904338	138.676505	RV134
+ACH St Georges Court	MAGILL	2 Murray Avenue	-34.904336	138.676631	RV135
+ACH Sturdee Street	LINDEN PARK	2a Sturdee Street	-34.945522	138.643844	RV129
+ACH Sydney Street	GLENUNGA	11 Sydney Street	-34.950497	138.640899	RV122
+ACH Third Street	MAGILL	22 Third Street	-34.904715	138.668438	RV132
+ACH Yankalilla Mews	YANKALILLA	Lot 51 Main South Road	-35.455030	138.337891	RV151
+Albion Mews	DOVER GARDENS	8-16 Vinall Street	-35.019397	138.534205	RV394
+Aldinga Beach Court	ALDINGA BEACH	Pridham Boulevard	-35.276922	138.463184	RV416
+Aldinga Shores	ALDINGA BEACH	9 Emerald Boulevard	-35.279611	138.466342	RV153
+Alexandrina Cove Lifestyle Village	HINDMARSH ISLAND	174 Vesta Drive	-35.512871	138.806067	RV399
+Almond Grove Retirement Village	MORPHETT VALE	126 Pimpala Road	-35.105316	138.542847	RV317
+Aminya Village	MANNUM	14 Adelaide Road	-34.915765	139.307440	RV452
+Angle Vale Gardens Retirement Estate Pty Ltd	ANGLE VALE	4 Fradd Road	-34.645494	138.648665	RV155
+Anglicare SA All Hallows Mews	WESTBOURNE PARK	56 Monmouth Road	-34.972903	138.596345	RV157
+Anglicare SA Dutton Mews	ELIZABETH EAST	33 Catalina Road	-34.720773	138.676386	RV158
+Anglicare SA Grandview Heights	TROTT PARK	85 Woodend Road	-35.084089	138.535200	RV156
+Anookanilla	RENMARK	166 Sixteenth Street	-34.172764	140.746749	RV471
+Anzac Crescent Retirement Village	LOXTON	7-9 Anzac Crescent	-34.454375	140.573538	RV211
+Arakoola Court	RENMARK	183 Seventeenth Street	-34.173213	140.744545	RV472
+Ashley Court Retirement Community	WARRADALE	96-100 Bowker Street	-35.001205	138.532737	RV163
+Auscare at Unley Retirement Community	KINGS PARK	262 Cross Road	-34.965936	138.591967	RV162
+Austin Court	VICTOR HARBOR	26 Hill Street	-35.551215	138.619499	RV591
+Balhannah Retirement Village	BALHANNAH	13 Junction Road	-34.991586	138.827785	RV102
+Balmoral Village	DERNANCOURT	800 Lower North East Road	-34.864868	138.680490	RV180
+Barmera Retirement Village	BARMERA	Nookamka Terrace	-34.246997	140.466579	RV505
+Barossa Village Inc - Amstberg Court	NURIOOTPA	8 Greenock Road	-34.471149	138.989150	RV188
+Barossa Village Inc - Basedow Hof	TANUNDA	68-70 Basedow Rd	-34.526195	138.968526	RV204
+Barossa Village Inc - Buna Terrrace	NURIOOTPA	30 Buna Terrrace	-34.471784	138.999924	RV201
+Barossa Village Inc - El Alamein Road	NURIOOTPA	1 & 3 El Alamein Road	-34.472322	139.002592	RV198
+Barossa Village Inc - George Fife Angas Court	TANUNDA	11-13 Angas Street	-34.516188	138.967381	RV203
+Barossa Village Inc - Goldfields	NURIOOTPA	Atze Parade/Kellett Court	-34.467359	138.978762	RV192
+Barossa Village Inc - Heidrich Court	NURIOOTPA	1-13 Heidrich Court	-34.472320	139.008563	RV195
+Barossa Village Inc - Kokoda Road	NURIOOTPA	7 Kokoda Road	-34.470997	139.002021	RV197
+Barossa Village Inc - Kreig Street	NURIOOTPA	18 Kreig Street	-34.466003	138.997607	RV191
+Barossa Village Inc - Lange Court	NURIOOTPA	53-57 Old Kapunda Road	-34.466099	138.988966	RV187
+Barossa Village Inc - Leske Close	TANUNDA	30A Maria Street	-34.524385	138.954284	RV205
+Barossa Village Inc - Maywald Court	NURIOOTPA	1-6 Maywald Crt	-34.472413	139.007687	RV196
+Barossa Village Inc - North Street	ANGASTON	20 North Street	-34.501937	139.052500	RV186
+Barossa Village Inc - Park Avenue	NURIOOTPA	22-30 Park Avenue	-34.472490	138.997326	RV202
+Barossa Village Inc - Penrice Road	NURIOOTPA	22-30 Penrice Road	-34.471276	139.006183	RV194
+Barossa Village Inc - Reusch Grove	ANGASTON	13 Schilling Street	-34.501517	139.051757	RV185
+Barossa Village Inc - River Road	NURIOOTPA	1-15 River Road	-34.472957	139.008195	RV189
+Barossa Village Inc - Scholz Ave	NURIOOTPA	11-33 Scholz Ave	-34.472219	139.006503	RV193
+Barossa Village Inc - Second Street	NURIOOTPA	29 Second Street	-34.469224	138.995369	RV199
+Barossa Village Inc - The Pines	NURIOOTPA	29-31 Greenock Road	-34.470776	138.985328	RV190
+Barryne Village	BELAIR	25 Sheoak Road	-34.995534	138.627738	RV378
+Bartonvale Lodge Pty Ltd	ENFIELD	1 Friar Street	-34.866703	138.606591	RV495
+Bartonvale Village	ENFIELD	4 Ellis Street	-34.864672	138.606274	RV494
+Belair Close	GLENALTA	1A Arizona Terrace	-35.006697	138.626909	RV515
+Belalie Crescent	JAMESTOWN	7 Dunure Terrace	-33.204141	138.606757	RV381
+Bellara Aged Care Village	CAMPBELLTOWN	98 Newton Road	-34.877339	138.671593	RV209
+Berri Cottage Homes	BERRI	1 McGilton Road	-34.282388	140.608596	RV212
+Boandik Lodge Inc	MOUNT GAMBIER	101 Lake Terrace East	-37.842894	140.793014	RV215
+Boneham Aged Care Services Inc	MILLICENT	82 Williams Road	-37.598287	140.351325	RV580
+Boston Bay Village Pty Ltd	PORT LINCOLN	1 New West Road	-34.720486	135.853297	RV216
+Bowman Court	CRYSTAL BROOK	12 Bowman Street Extension	-33.349255	138.212136	RV240
+Brighton Dunes	NORTH BRIGHTON	2 Jack Fox Drive	-35.002911	138.512808	RV631
+Bupa Campbelltown ILU's	CAMPBELLTOWN	1 Steele Street	-34.881666	138.663437	RV218
+Burton Lifestyle Village	BURTON	215 Bolivar Road	-34.748657	138.605396	RV220
+Cambridge Estate	GLYNDE	3 & 9 Edward Street 404 & 408 Payneham Road	-34.893724	138.648205	RV152
+Ceduna District Health Services Inc	CEDUNA	3 O'Loughlin Terrace	-32.120709	133.671804	RV235
+Cherington Lodge	BELAIR	13 Laffers Road	-35.005135	138.626581	RV514
+Chinner Street Cottages	PETERBOROUGH	2-12 Chinner Street	-32.973199	138.833137	RV453
+Chippendale Retirement Village	MODBURY	21 Seymour Avenue	-34.833702	138.695412	RV513
+Clarence Park	CLARENCE PARK	49 George Street	-34.965738	138.585193	RV517
+Clayton Church Homes - Beulah Terraces	NORWOOD	144-148 Beulah Road	-34.918190	138.639989	RV231
+Clayton Church Homes - Magill	MAGILL	Fisher Street	-34.899411	138.669354	RV229
+Clayton Church Homes Percival Street	NORWOOD	28 Queen Street 2-6 Percival Street	-34.918254	138.638944	RV640
+Cleve Retirement Cottages	CLEVE	Whyte Street	-33.702152	136.497900	RV254
+Coach House Mews	MYRTLE BANK	18 Cross Road	-34.963437	138.639717	RV528
+College Green Retirement Village	KENT TOWN	17-23 Grenfell Street	-34.919874	138.621443	RV355
+Coolaroo Court	RENMARK	116 Thurk Street	-34.171517	140.743461	RV474
+Copper Coast Lifestyle Village	MOONTA	James Place	-34.058685	137.589073	RV232
+Cousins Court	RENMARK	25 Murtho Street	-34.172354	140.746311	RV475
+Crafers War Memorial Retirement Village	CRAFERS	1 Station Road	-34.997813	138.703255	RV104
+Croydon Park	CROYDON PARK	29 Tungara Avenue	-34.881366	138.564132	RV518
+Cudmore Court	HENLEY BEACH	20a Cudmore Terrace	-34.923486	138.501724	RV227
+Dawes Village	GAWLER	3 & 5 Lyndoch Road	-34.596954	138.750929	RV371
+Dempster Court	MARRYATVILLE	4 Hackett Terrace	-34.927348	138.647503	RV558
+Distinctive Gardens Retirement Village	VICTOR HARBOR	41-53 Pine Avenue	-35.543608	138.621048	RV247
+Dunbar Homes Naracoorte	NARACOORTE	Church Street & Magarey Cresce	-36.958624	140.740501	RV253
+ECH Arch Prime Lodge	MYRTLE BANK	472 Fullarton Road	-34.961371	138.626984	RV318
+ECH Ardrossan Retirement Estate	ARDROSSAN	32 Oval Terrace	-34.424108	137.911381	RV258
+ECH Arnold Court	KURRALTA PARK	135 Anzac Highway	-34.954101	138.569137	RV304
+ECH Baker Court	ALBERTON	13 Kingscote Street	-34.861978	138.518526	RV256
+ECH Blodwin Court	MARRYATVILLE	10 Clapton Raod	-34.928286	138.648691	RV314
+ECH Bowden Towers	ADELAIDE	241 South Terrace	-34.935116	138.606893	RV255
+ECH Braden Court	SOUTH PLYMPTON	592-594 Cross Road	-34.967702	138.558391	RV335
+ECH Braested	PARKSIDE	175 Greenhill Road	-34.941075	138.612228	RV327
+ECH Branston Court	VALE PARK	Branston Court	-34.892208	138.626258	RV340
+ECH Brenda Court	KENSINGTON GARDENS	1 White Avenue	-34.914649	138.660887	RV301
+ECH Bright Court	HIGHGATE	6 Avenue Road	-34.961891	138.625302	RV294
+ECH Burnard Court	COLLINSWOOD	119 North East Road	-34.884799	138.617830	RV268
+ECH Cavender Court	BRIGHTON	147 Esplanade	-35.018892	138.515914	RV261
+ECH Clarence Gardens Estate	CLARENCE GARDENS	94 Avenue Road	-34.971112	138.579300	RV265
+ECH Clayton Court	GOODWOOD	19 Gilbert Street	-34.953074	138.592510	RV291
+ECH Clutterbuck Lodge	LOCKLEYS	378 Henley Beach Road	-34.926982	138.537153	RV309
+ECH Colin Court	PARK HOLME	7 Edwards Avenue	-34.994128	138.553255	RV325
+ECH Crescent Lodge	COLONEL LIGHT GARDENS	2 Kandahar Crescent	-34.979164	138.592844	RV270
+ECH Cungena	PARK HOLME	54 Cungena Avenue	-34.988039	138.548699	RV326
+ECH David Court	UNDERDALE	8 Arnold Street	-34.923926	138.547331	RV338
+ECH David Read Lodge	LOCKLEYS	462 Henley Beach Road	-34.925220	138.525762	RV310
+ECH Day Court	CROYDON	10 St Lawrence Avenue	-34.891105	138.567819	RV271
+ECH Dellow Court	LEABROOK	9 Rochester Street	-34.931275	138.653470	RV306
+ECH Donald Court	CLARENCE GARDENS	108 Edward Street	-34.977457	138.580624	RV266
+ECH Downing Court	HOVE	44-48 Downing Street	-35.008763	138.516915	RV296
+ECH Duggan Court	PLYMPTON	30 Wheaton Road	-34.963815	138.559744	RV329
+ECH Ellen Court	NAILSWORTH	9-15 Ellen Street	-34.886986	138.603958	RV322
+ECH Ernest Court	WOODVILLE NORTH	9-15 Lonsdale Street	-34.872504	138.546903	RV351
+ECH Fairfield Lodge	GLENELG SOUTH	2 Farrell Street	-34.989075	138.513049	RV289
+ECH Fuller Court	CUMBERLAND PARK	32-34 Eaton Street	-34.969357	138.588979	RV272
+ECH Giles Close	BURNSIDE	86 Lockwood Road	-34.934671	138.664869	RV263
+ECH Grainger Court	MYRTLE BANK	22 Clinton Avenue	-34.961558	138.628055	RV319
+ECH Greenleigh Court	GLENELG	5 Dunbar Terrace	-34.979463	138.521905	RV283
+ECH Grundy Court	GLENELG SOUTH	31-33 Bath Street	-34.989989	138.519207	RV290
+ECH Hanson Court	WOODVILLE GARDENS	24 Hanson Road	-34.871185	138.548609	RV350
+ECH Henderson Lodge	PLYMPTON	325 Marion Road	-34.954657	138.554996	RV330
+ECH Henry Court	HYDE PARK	38 Park Street	-34.954732	138.603152	RV300
+ECH Hill Court	VICTOR HARBOR	42 Hill Street	-35.550112	138.618602	RV341
+ECH Howard Court	BURNSIDE	4 Chisholm Avenue	-34.933707	138.660763	RV264
+ECH James Martin Court	GLANDORE	120 Anzac Highway	-34.954677	138.570244	RV281
+ECH Kardella	ROSSLYN PARK	395 Kensington Road	-34.924632	138.669355	RV333
+ECH Kelvin Grove	LOCKLEYS	464-466 Henley Beach Road	-34.925305	138.525367	RV311
+ECH Kenton Court	LOCKLEYS	460 Henley Beach Road	-34.925477	138.526138	RV312
+ECH Kimberley Court	HOVE	38-42 Downing Street	-35.008737	138.517571	RV297
+ECH Knightsbridge	MYRTLE BANK	19 Barr Smith Avenue	-34.961193	138.637523	RV320
+ECH Lawrence Court	WALKERVILLE	11 Brunswick Street	-34.888096	138.616454	RV347
+ECH Leonard Court	COLLINSWOOD	10 Cassie Street	-34.889672	138.610634	RV269
+ECH Leslie Court	HOVE	3 Stopford Road	-35.013857	138.523572	RV298
+ECH Lewis Court	CLARENCE GARDENS	841 South Road	-34.971075	138.573886	RV267
+ECH Lindsay Court	SOMERTON PARK	9 Walkers Road	-34.991482	138.516308	RV334
+ECH Little Adelaide Village	PROSPECT	24-26 Wilson Street	-34.893721	138.600675	RV331
+ECH Lynton Court	FINDON	391-393 Grange Road	-34.905560	138.524461	RV276
+ECH Manson Towers	GLENELG	13 Moseley Street	-34.981454	138.512906	RV284
+ECH Marchant Court	ATHELSTONE	334 Gorge Road	-34.870130	138.702896	RV259
+ECH Marshall Court & Farrar Court	GLENELG	18 & 22 Tod Street	-34.971445	138.516097	RV285
+ECH Marten Retirement Village	LARGS NORTH	320 Victoria Road	-34.813639	138.501937	RV305
+ECH Maurice Court	UNLEY	31-33 Arthur Street	-34.950812	138.603923	RV339
+ECH Maxwell Court	FULLARTON	200 Glen Osmond Road	-34.949049	138.628299	RV277
+ECH McGregor Lodge	PARKSIDE	4-6 Randolph Avenue	-34.951992	138.624529	RV328
+ECH Merrindie	LEABROOK	15 Stanley Street	-34.928530	138.653295	RV307
+ECH Mervyn Graham Lodge	VICTOR HARBOR	7 Acraman Street	-35.550440	138.619490	RV342
+ECH Michael Court	FULLARTON	370 Fullarton Road	-34.954447	138.626060	RV278
+ECH Moran Court	FULLARTON	74a Fisher Street	-34.956478	138.625487	RV279
+ECH Mostyn Court	MITCHAM	66 Princes Street	-34.977683	138.618668	RV315
+ECH Murray Court	CUMBERLAND PARK	41 Eaton Street	-34.970182	138.589922	RV273
+ECH Nairne Retirement Estate	NAIRNE	2 Princes Highway	-35.038424	138.901192	RV323
+ECH Norgrove Lodge	LEABROOK	13 Phillip Avenue	-34.932630	138.656283	RV308
+ECH Palmer Court	HOVE	8 Illawarra Avenue	-35.010719	138.525167	RV299
+ECH Prince Court	ALBERTON	45 Prince Street	-34.859280	138.518208	RV257
+ECH Ramsay Court	ST PETERS	50-52 Second Avenue	-34.907058	138.626161	RV336
+ECH Reginald Court	HIGHGATE	108 Cross Road	-34.964254	138.623126	RV295
+ECH Riverhaven	WALKERVILLE	124 Walkerville Terrace	-34.894408	138.618867	RV348
+ECH Roberts Court	KINGS PARK	1A Stanley Street	-34.961467	138.591589	RV303
+ECH Robinson Lodge	MYRTLE BANK	19 Riverdale Road	-34.961689	138.636965	RV321
+ECH Rotary Village	MODBURY	Ramsay Avenue	-34.834728	138.696686	RV316
+ECH Rundle Court	FULLARTON	388 Fullarton Road	-34.955940	138.626495	RV280
+ECH Scarfe Court	NORWOOD	3-12 Gertrude Street	-34.924982	138.638195	RV324
+ECH Sidney Batty Court	KENSINGTON GARDENS	16 Leonore Avenue	-34.915012	138.664529	RV302
+ECH Stace Lodge	GLENELG	13 Miller Street	-34.977295	138.530941	RV286
+ECH Torrens Court	EVANDALE	220-224 Payneham Road	-34.903263	138.634270	RV275
+ECH Tucker Lodge	GLENELG	15 Tennant Street	-34.986982	138.522805	RV287
+ECH Victoria Court	BROOKLYN PARK	371 Henley Beach Road	-34.926864	138.540804	RV262
+ECH Vine Court	PROSPECT	83 Vine Street	-34.887050	138.585833	RV332
+ECH Walker Court	THEBARTON	47 Dew Street	-34.917667	138.572163	RV337
+ECH Warren Court	GLENELG	30 Old Tapleys Hill Road	-34.973773	138.517889	RV288
+ECH Waverley Court	LOWER MITCHAM	5 Spruce Crescent	-34.977986	138.608137	RV313
+ECH Wilkinson Court	VICTOR HARBOR	22 William Street	-35.549777	138.617950	RV343
+ECH William Ackland Court	GLANDORE	4 Glengarry Avenue	-34.962437	138.571348	RV282
+ECH Williams Court	WEST BEACH	20 Graydale Street	-34.946206	138.504437	RV349
+Eckermann Court	PARINGA	41 Pauline Street	-34.180072	140.788593	RV470
+Elimatta	GAWLER	Tod Street and Fotheringham Te	-34.599421	138.744331	RV370
+Elkanah Retirement Village	MORPHETT VALE	50 Woodcroft Drive	-35.111155	138.539291	RV139
+Elliot Gardens	PORT ELLIOT	18 Montpelier Terrace	-35.528423	138.680070	RV414
+Encounter Lakes Village	ENCOUNTER BAY	5 San Remo Court	-35.557005	138.596809	RV459
+Essington Mews	CLARE	2-16 Essington Avenue	-33.843144	138.612547	RV380
+Eyre Court	CRYSTAL BROOK	55 Eyre Road	-33.350022	138.207561	RV239
+Faggotter Grove	WEST LAKES SHORE	U8/35 Manly Circuit	-34.859633	138.489666	RV604
+Fifth Creek Rise Retirement Eco-Village	ATHELSTONE	286 Gorge Road	-34.873896	138.698338	RV154
+Fullarton Lutheran Homes Inc	FULLARTON	14 Frew Street	-34.955944	138.629013	RV368
+Gables of St Morris	ST MORRIS	31 Fifth Avenue	-34.909923	138.652210	RV406
+Garden Cottages - Beaumont	BEAUMONT	37a Dashwood Road	-34.950030	138.658703	RV401
+Garden Cottages - Greengate	BEAUMONT	5c Short Crescent	-34.948917	138.658960	RV402
+Garden Cottages - St Georges	ST GEORGES	536 Portrush road	-34.954100	138.643796	RV405
+Giles Court	KENSINGTON PARK	3 Alpha Street	-34.924419	138.652777	RV557
+Glengowrie Retirement Village	GLENGOWRIE	170 Oaklands Road	-34.995471	138.536411	RV496
+Glenrose Court Strata Units	GLEN OSMOND	1 Gilles Road	-34.957310	138.645207	RV422
+Golden Grove Lifestyle Village	GOLDEN GROVE	1-25 Captain Robertson Avenue	-34.769594	138.727690	RV429
+Governor Daly Village	GAWLER	4A & 20 Daly Street	-34.598647	138.751220	RV372
+Governor Gawler Village	GAWLER	11 Hutchinson road	-34.592252	138.754431	RV373
+Grange View Estate	GRANGE	40 Sylvan Way	-34.896020	138.499727	RV376
+Greenbriars Village	HAPPY VALLEY	5 Happy Valley Drive	-35.085845	138.582268	RV223
+Gumeracha Retirement Village	GUMERACHA	5 Albert Street	-34.825464	138.882395	RV105
+Hallmont Estate	MOUNT GAMBIER	20 Woodlands Drive	-37.801304	140.782711	RV213
+Hamilton Retirement Village	GLENGOWRIE	194 Morphett Road	-34.993953	138.537655	RV465
+Hamley Bridge District Senior Citizens Homes Inc	HAMLEY BRIDGE	Albert Street & Norman Street	-34.358765	138.676988	RV377
+Harwin Retirement Village	SALISBURY	133 Frost Road	-34.782837	138.651989	RV503
+Hawksbury Gardens	SALISBURY NORTH	Crnr Elmgrove Road & Silver St	-34.750383	138.622959	RV602
+Hawthorn	HAWTHORN	72 Belair Road	-34.969138	138.608474	RV521
+Hayfield Plains	BALAKLAVA	7 Diekman Terrace	-34.150016	138.421074	RV417
+Hayman Court	MARRYATVILLE	11 Hackett Terrace	-34.928181	138.646689	RV559
+Hayward Gardens Retirement Village	TORRENSVILLE	4-8 Hayward Avenue	-34.923374	138.558014	RV245
+Heritage Apartments	MYRTLE BANK	18 Cross Road	-34.962889	138.639543	RV529
+Heritage Rose	EVERARD PARK	Cnr Ross Street & Fourth Avenu	-34.955407	138.576325	RV419
+Herrmann Retirement Village	KAROONDA	Herrmann Crescent	-35.093431	139.890472	RV249
+Heysen Court Lifestyle Village	HOPE VALLEY	18 Heysen Ave	-34.841807	138.679687	RV431
+Hillside Gardens Apartments	HEATHFIELD	88 Cricklewood Road	-35.026010	138.724671	RV292
+Hillsview Village	HAPPY VALLEY	18 McHarg Road	-35.091786	138.589515	RV445
+Holdfast Gardens Retirement Village	CAMDEN PARK	424-440 Anzac Highway	-34.973322	138.541763	RV242
+Ingle Farm Gardens Retirement Village	INGLE FARM	30 Burri Street	-34.819370	138.641613	RV243
+Jallarah Homes Inc	MENINGIE	10 South Terrace	-35.693184	139.333771	RV392
+James Martin Village	WILLASTON	19 Dawkins Avenue	-34.579727	138.739443	RV374
+Kensington Mews	KENSINGTON	69 & 57 Maesbury Street	-34.925638	138.645008	RV555
+Kidman Gardens Retirement Village	KIDMAN PARK	4 Francis Street	-34.911086	138.525066	RV244
+Kingsborough Retirement Village	NORWOOD	79-81 William St	-34.923978	138.633530	RV361
+Kingswood	KINGSWOOD	30 Seafield Avenue	-34.970563	138.613113	RV522
+Kirton Court Units	PORT LINCOLN	86 London Street	-34.727726	135.877450	RV234
+Krause Lodge	RENMARK	199 Fourteenth Street	-34.170430	140.746776	RV476
+LHI - Glynde	GLYNDE	24 Avenue Road	-34.895680	138.648239	RV441
+LHI - Hope Valley	HOPE VALLEY	1215 Grand Junction Road	-34.840146	138.698412	RV442
+Leabrook	LEABROOK	5 Jean Street	-34.932867	138.652476	RV524
+Leabrook Place	LEABROOK	17 Tusmore Ave	-34.928120	138.650556	RV411
+Lightsview Retirement Village	LIGHTSVIEW	2-26 East Parkway	-34.860982	138.635344	RV450
+Lill-Wood Lodge	RENMARK	141 Sixteenth Street	-34.174762	140.747894	RV477
+Lincoln Grove Retirement Village	PORT LINCOLN	27 Marine Avenue	-34.726875	135.846811	RV502
+Living Choice Fullarton	FULLARTON	123 Fisher Street	-34.957893	138.619029	RV625
+Living Choice Woodcroft	WOODCROFT	177 Pimpala Road	-35.103668	138.550203	RV366
+Lobethal Retirement Village	LOBETHAL	3 Jeffery Street	-34.909408	138.874618	RV106
+Longridge Aged Care	NARACOORTE	900 Attiwill Street	-36.970677	140.748005	RV463
+Loxton Retirement Village	LOXTON	Bookpurnong Tce	-34.456035	140.560660	RV440
+Magill	MAGILL	63 - 67 Vine Street	-34.908374	138.680541	RV525
+Magill Retirement Village	MAGILL	122 Reid Avenue	-34.897374	138.671365	RV500
+Marion	MARION	60 George Street	-35.009457	138.556399	RV526
+Marion Rose	MITCHELL PARK	7 Shaun Crescent	-35.006873	138.559646	RV425
+McAuley Mews	BRIGHTON	17 Old Beach Road	-35.019557	138.520389	RV516
+McCutcheon Grove	WEST LAKES SHORE	79 Fairford Terrace	-34.859602	138.488693	RV605
+Meander Cottages	YANKALILLA	161 Main South Road	-35.455698	138.340025	RV596
+Mercer Lodge	RENMARK	104 Thurk Street	-34.171297	140.743872	RV478
+Midnorth Health - Nalya Cottages	PETERBOROUGH	122 Railway Terrace	-32.975631	138.831492	RV454
+Moana Mews Retirement Estate	SEAFORD	499 Grand Boulevard	-35.193048	138.481647	RV455
+Moonta Lifestyle Village	NORTH MOONTA	Barbary Court	-34.061042	137.591189	RV626
+Moonta Retirement Village	MOONTA	1 Majors Road	-34.062332	137.591099	RV251
+Mount Gambier	MOUNT GAMBIER	5 Holder Street	-37.840614	140.791564	RV527
+Mt Barker Lifestyle Village	MOUNT BARKER	1 Lysander Court	-35.086077	138.861186	RV432
+Mulberry Grove Retirement Village	FELIXSTOW	55 Briar Road	-34.889185	138.642494	RV352
+Murlali Village	CHRISTIE DOWNS	1 McKinna Road	-35.137706	138.488813	RV418
+Murray Bridge Lutheran Homes	MURRAY BRIDGE	51 Owl Drive	-35.148247	139.287658	RV460
+Murray Heights Lutheran Village	MURRAY BRIDGE	7 Duldig Road	-35.133297	139.235782	RV461
+Murray Lands Homes for the Aged Inc	MURRAY BRIDGE	5 Pugh Avenue	-35.135420	139.276083	RV629
+Nat Solomons	NORTH PLYMPTON	Bransby Avenue Extension	-34.955749	138.551718	RV536
+Netley Grove	NETLEY	3-17 Watson Avenue	-34.949336	138.552147	RV397
+Norfolk Estate	MARION	30A Norfolk Road	-35.014015	138.554134	RV396
+Norman McCauley Homes	MOONTA	Military Road	-34.068632	137.594403	RV627
+Norwood	NORWOOD	71 Queen Street	-34.922635	138.638713	RV539
+OGrady Court	NORTH PLYMPTON	332 Marion Road	-34.954746	138.553322	RV537
+Oakden Retirement Village	OAKDEN	27 Brookside Street	-34.856889	138.636726	RV630
+Oaklands Park	OAKLANDS PARK	395 Morphett Road	-35.006931	138.540555	RV540
+Oasis Garden Village	GAWLER	Gate 1/21 Hutchinson Road	-34.593753	138.756171	RV221
+Oxford Retirement Village	HOVE	44 Wattle Street	-35.010314	138.516407	RV353
+Palm Grove	WOODVILLE	Corner Hughes St North & Lesli	-34.875142	138.545123	RV228
+Paradise Gardens Independent Leisure Living	PARADISE	171 Gorge Road	-34.875348	138.684406	RV508
+Paradise Retirement Village	PARADISE	695 Lower North East Road	-34.871014	138.671631	RV619
+Parkrose Court	EVERARD PARK	40 Norman Terrace	-34.956974	138.574306	RV420
+Parkrose Village	EVERARD PARK	34 - 36 Norman Terrace	-34.956225	138.575667	RV421
+Pasadena Village Pty Ltd	PASADENA	11A Boorman Avenue	-34.993291	138.588603	RV398
+Payneham	PAYNEHAM	73 Portrush Road	-34.902733	138.638793	RV541
+Pendle Lodge	RENMARK	52 Tenth Street	-34.164723	140.750986	RV480
+Peninsula	LARGS BAY	20 Everard Street	-34.824601	138.488525	RV523
+Penneys Hill Estate	HACKHAM	82 Penneys Hill Road	-35.147987	138.533924	RV642
+Peter Speight Lodge	RENMARK	26 Thurk Street	-34.167189	140.749132	RV486
+Pine Springs	NETLEY	3 Harris Street	-34.949868	138.552322	RV532
+Pineview	GLENSIDE	3 Conyngham Street	-34.941087	138.633120	RV219
+Pinnaroo Retirement Village	PINNAROO	1-3 Jenkins Terrace	-35.262146	140.904992	RV551
+Plympton Mews	PLYMPTON	47 Mooringe Avenue	-34.960197	138.548538	RV623
+Poinsettia Village	PORT AUGUSTA	Pybus Street	-32.486986	137.771044	RV233
+Pooraka	POORAKA	31 Royal Avenue & 13 Chellasto	-34.832532	138.615788	RV542
+Port Pirie Lifestyle Village	PORT PIRIE	54 Wandareah Road	-33.195421	138.008213	RV469
+Prospect	PROSPECT	23 Alpha Road	-34.884087	138.596972	RV543
+Rees Lodge	RENMARK	153 Cowra Street	-34.171191	140.743775	RV481
+Resthaven Inc - Bellevue Heights	BELLEVUE HEIGHTS	47 Eve Road	-35.034133	138.584811	RV487
+Resthaven Inc - Leabrook	LEABROOK	336 Kensington Road	-34.926685	138.658645	RV628
+Resthaven Inc - Malvern	MALVERN	43 Marlborough Street	-34.958831	138.611498	RV488
+Resthaven Inc - Marion	MARION	12 Township Road	-35.012023	138.554371	RV489
+Resthaven Inc - Murray Bridge	MURRAY BRIDGE	53 Swanport Road	-35.125322	139.276382	RV462
+Resthaven Inc - Paradise	PARADISE	61 Silles Road	-34.867640	138.684799	RV491
+Resthaven Mt Gambier Retirement Apartments	MOUNT GAMBIER	24 Elizabeth Street	-37.826132	140.777808	RV622
+Resthaven Port Elliot	PORT ELLIOT	North Terrace	-35.529992	138.678269	RV638
+Ridgehaven Rise	RIDGEHAVEN	33 Golden Grove Road	-34.823355	138.697429	RV447
+Riverpoint Retirement Estate	NOARLUNGA DOWNS	89 Serafino Drive	-35.164592	138.504631	RV534
+Riverside Estate	RENMARK	1 Murray Dyer Avenue	-34.165980	140.746861	RV506
+Riverside at Goolwa	GOOLWA	194 Liverpool Road	-35.497395	138.790072	RV520
+Riverview Lutheran Rest Home Inc.	LOXTON	5 Luther Road	-34.446025	140.571953	RV507
+Rose Villas	HENLEY BEACH	Crnr Vivian & North Streets	-34.923508	138.503851	RV226
+Rosehaven	MODBURY	953 North East Road	-34.831329	138.684094	RV426
+Salford Retirement Estate	ABERFOYLE PARK	1a Lyn Street	-35.059814	138.599827	RV570
+Sash Ferguson Retirement Village	MOUNT BARKER	8 Fletcher Road	-35.072518	138.864864	RV359
+Scarborough Mews Retirement Village	SOMERTON PARK	32A Scarborough Street	-34.993566	138.518742	RV504
+Schubert Lodge	RENMARK	200 Fifteenth Street	-34.170717	140.746308	RV482
+Semaphore Park	SEMAPHORE	35 Recreation Parade	-34.855825	138.482082	RV544
+Sevenoaks of Stirling	STIRLING	24 Mabel Street	-35.010478	138.713782	RV568
+Somerton Park	SOMERTON PARK	91 Diagonal Road	-34.994125	138.527186	RV448
+Somerton Park	SOMERTON PARK	Elgar Rd, Gilbert Rd & Peterse	-34.993863	138.525210	RV545
+Spring Grove Retirement Village	KLEMZIG	49 Second Avenue	-34.882574	138.644728	RV499
+St Johns Close	PROSPECT	3 Bosanquet Avenue	-34.883085	138.593017	RV389
+St Louis on Blyth	PARKSIDE	34-36 Blyth Street	-34.951224	138.620468	RV554
+St Peters Close	STEPNEY	47 Stepney Street	-34.912181	138.626956	RV546
+Streaky Bay Senior Citizens Homes	STREAKY BAY	Flinders Drive	-32.793510	134.218475	RV572
+Stuart Grove Retirement Community	CAMDEN PARK	55 Penong Avenue	-34.963693	138.540134	RV573
+Sturt Village	MARION	9-13 Finnis Street	-35.007565	138.557738	RV466
+Sutton Court Retirement Village	PORT MACDONNELL	12 Jeffries Street	-38.053942	140.696571	RV248
+Swan Court	MARRYATVILLE	2 Hackett Terrace	-34.927097	138.647128	RV560
+Tailem Bend Homes for Aged Inc (TABEREFTA)	TAILEM BEND	8-12 Pontt St	-35.256092	139.461627	RV576
+Tandara Lodge of Penola and District Inc	PENOLA	21-23 Portland Street	-37.377131	140.838764	RV577
+Tanunda Lutheran Home Inc	TANUNDA	27 Bridge Street	-34.517588	138.960189	RV578
+Tatiara Retirement Village Society Inc	BORDERTOWN	68 Park Terrace	-36.310482	140.765203	RV579
+Tea Tree Gardens Retirement Village	HOPE VALLEY	1075 Grand Junction Road	-34.842410	138.684902	RV497
+The Ashbrook	ASHFORD	2-8 Syme Street	-34.949330	138.575826	RV159
+The Elms Lifestyle Village	WALKLEY HEIGHTS	4-30 Homestead Ave	-34.837580	138.639802	RV437
+The Fairways	VICTOR HARBOR	29 Adelaide Road	-35.530432	138.636762	RV547
+The Ferns Lifestyle Village	SALISBURY EAST	20 Smith Road	-34.774068	138.664403	RV435
+The Gardens Lifestyle Village	PARAFIELD GARDENS	25 Rundle Drive	-34.782835	138.602655	RV433
+The Glen Woodley Estate	MYRTLE BANK	360 Glen Osmond Road	-34.961785	138.641043	RV530
+The Glenbrook	GLENSIDE	25 L'Estrange St	-34.943329	138.634846	RV410
+The Heysen Village	HAHNDORF	7 Haebich Lane	-35.028094	138.805971	RV552
+The Laurels Retirement Village	MOUNT BARKER	2 Hutchinson Street	-35.062494	138.856439	RV501
+The Parks Lifestyle Village	PASADENA	3 Cashel Street	-34.993335	138.583004	RV434
+The Parks Retirement Village	MANSFIELD PARK	7 Richard Street	-34.851063	138.550588	RV512
+The Pines	NORTH PLYMPTON	336 Marion Road	-34.955464	138.550141	RV535
+The Pines Close	NETLEY	2 Playford Avenue	-34.954165	138.551697	RV533
+The Sands Lifestyle Village	SEAFORD	670 Grand Boulevard	-35.182402	138.482483	RV436
+The Terraces	KIMBA	17-29 Martin Tce	-33.142916	136.414740	RV236
+The Village Green	ANGLE VALE	21 - 25 Fradd Court	-34.642966	138.645228	RV621
+The Vines	WYNN VALE	1 Taeuber Court	-34.793011	138.690955	RV549
+The Vines Lifestyle Village	EVANSTON PARK	35 Coleman Parade	-34.622702	138.744706	RV428
+The Vines Retirement Estate	NURIOOTPA	18 Schaedel Street	-34.463685	138.990090	RV608
+The War Veterans' Home Myrtle Bank Inc	MYRTLE BANK	55 Ferguson Avenue	-34.960793	138.634217	RV583
+The Waterford Apartments	MYRTLE BANK	16 Cross Road	-34.962789	138.639915	RV531
+Thornbury Park Retirement Estate	GOOLWA	17 Willmett Road	-35.508553	138.772089	RV592
+Thorndon Park Estate	PARADISE	3 Belperio Court	-34.872315	138.685269	RV593
+Tintinara Aged Homes	TINTINARA	31 Wendt Terrace	-35.881847	140.058329	RV624
+Torrens Grove Retirement Village	KILKENNY	1 Humphries Terrace	-34.877368	138.553075	RV498
+Townsend Park	HOVE	28 King George Ave	-35.012387	138.516730	RV595
+Trinity Green	MAWSON LAKES	1-3 Trinity Circuit	-34.810199	138.609351	RV413
+Trinity Place	PASADENA	2 Grandview Drive	-35.000669	138.592614	RV597
+Tumby Bay Homes Inc	TUMBY BAY	Esplanade	-34.369086	136.105563	RV598
+Underdale Gardens Retirement Village	UNDERDALE	6 Sherriff Street	-34.923615	138.550980	RV246
+Unity Retirement Village	ABERFOYLE PARK	38 Taylors Road East	-35.074016	138.597253	RV569
+Vailima Gardens Retirement Community	HACKNEY	63 Hackney Road	-34.913605	138.615506	RV161
+Valley of Praise Retirement Village	LOBETHAL	85 Main Street	-34.902316	138.873761	RV439
+Vermont Estate	SOUTH PLYMPTON	7A Wheaton Street	-34.970459	138.557464	RV415
+Victor Harbor Lutheran Homes Inc	VICTOR HARBOR	21 Adelaide Road	-35.532042	138.635855	RV606
+Victoria Grove	GLENSIDE	242-266 Greenhill Road	-34.940246	138.627588	RV607
+Villas at Brighton	BRIGHTON	Noble & Voules Close	-35.017289	138.524925	RV449
+Villas on Milton	FULLARTON	1 Milton Avenue	-34.954168	138.634354	RV444
+Vin Rice Village	GAWLER	1 and 4 David Street	-34.598203	138.750922	RV369
+Walnut Grove Estate	OLD REYNELLA	13 Walnut Street	-35.091593	138.538197	RV446
+Waratah Close	HENDON	83 Tapleys Hill Road	-34.873532	138.513716	RV225
+Warradale	WARRADALE	220 Diagonal Road	-35.005983	138.537827	RV550
+Warradale Estate	WARRADALE	3 Gangara Avenue	-35.006590	138.538281	RV636
+Warrawee Lodge (Waikerie)	WAIKERIE	53A Elders Way	-34.187095	139.982077	RV609
+Warrina Close	CAMPBELLTOWN	46 Hill Street	-34.878064	138.656039	RV610
+Warrina Court	CAMPBELLTOWN	57 Hill Street	-34.877107	138.656779	RV611
+Warrina Grove	HOPE VALLEY	55 Reservoir Road	-34.840536	138.689074	RV612
+Warrina Park	PARADISE	59 George Street	-34.868592	138.679957	RV614
+Warrina Valley Estate	HOPE VALLEY	12 Reservoir Road	-34.842327	138.687599	RV613
+Waterford Estate	MURRAY BRIDGE	55 Long Island Road	-35.131308	139.294177	RV615
+Wattle Grove	WATTLE PARK	1 Wynard Grove	-34.925326	138.670941	RV548
+Wellington Court	ALLENBY GARDENS	78 Coombe Road	-34.899279	138.554980	RV599
+Wesley Court	ROSEWATER	Short Street	-34.854663	138.517399	RV601
+Westminster Village	GRANGE	4 Sylvan Way Crnr Fort Street	-34.896698	138.495865	RV600
+Wilkinson Court	RENMARK	Seventeeth Street	-34.170870	140.743331	RV483
+Willason Grove	SEMAPHORE	5 Gill Court	-34.854802	138.482243	RV603
+Wilson Court	KENSINGTON	63-65 Bridge Street	-34.925807	138.642816	RV556
+Wind Song Independent Living Units	ELIZABETH EAST	102 Halsey Road	-34.728072	138.682421	RV365
+Winzor Retirement Estate	SALISBURY	85-93 Winzor Street	-34.762710	138.628682	RV400
+Wisteria Grove Retirement Village	BROADVIEW	112 Hampstead Road	-34.872103	138.618278	RV492
+Wonani Lodge	RENMARK	156 Seventeeth Street	-34.173757	140.746053	RV484
+Woodlands Grove Retirement Estate	MOUNT GAMBIER	15 Woodlands Drive	-37.805014	140.783579	RV214
+Woodside Retirement Village	WOODSIDE	11 Nairne Road	-34.953299	138.877047	RV107
+Wudinna Homes for Aged	WUDINNA	Naylor Terrace	-33.048243	135.467336	RV618
+Yangala Retirement Village	CRAIGMORE	14 Carinya Street	-34.707133	138.706737	RV238
+Yhafen Retirement Units	WALLAROO	off Errington St	-33.928206	137.639444	RV252
+Zidinys	KENSINGTON	27 Thornton Street	-34.922358	138.644160	RV639
+Ziggy Adamczyk Court	RENMARK	64 Nineteenth Street	-34.175247	140.743199	RV485

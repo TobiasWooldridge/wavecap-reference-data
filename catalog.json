@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "repository": "wavecap-reference-data",
+  "license_policy": "Per-dataset; no blanket relicensing. See LICENSE-DATA and RIGHTS.md.",
+  "datasets": [
+    {
+      "id": "wavecap:fire-reference:v1",
+      "path": "data/reference.json",
+      "license": "CC-BY-SA-4.0",
+      "attribution": "SACFS Promotions Unit; WaveCap reference contributors",
+      "source_urls": [
+        "https://www.fire-brigade.asn.au/Station_Find.asp",
+        "https://www.fire-brigade.asn.au/vehicles/Appliance_Find.asp",
+        "https://www.fire-brigade.asn.au/legal.asp"
+      ],
+      "source_date": null,
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "aff03f995529d60f87b91a572375ed9dd2dbb11c5aa23f4208b7ff2b7d4681cf",
+      "record_count": null,
+      "stable_key": "agency-qualified station/appliance id; see docs/fire-reference.md",
+      "validity": "Source listings, not verified availability. Source update/retrieval dates are retained per record/provenance; media link-only with conflicting notices."
+    },
+    {
+      "id": "wavecap:fire-unit-labels:v1",
+      "path": "bundles/unit-labels.v1.json",
+      "license": "CC-BY-SA-4.0",
+      "attribution": "SACFS Promotions Unit; WaveCap reference contributors",
+      "source_urls": [
+        "https://www.fire-brigade.asn.au/Station_Find.asp",
+        "https://www.fire-brigade.asn.au/vehicles/Appliance_Find.asp"
+      ],
+      "source_date": null,
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "25f5d1c2a2a0c9efb9eb43e03f971d97b1a1e9aa9513ecfaa9173cf981de1132",
+      "record_count": null,
+      "stable_key": "reference_id; exact case/whitespace-normalized full source name",
+      "validity": "Ambiguous names omitted; no numeric-only or RF-ID join; compact labels never replace full/source identity."
+    },
+    {
+      "id": "abs:sa-localities:2021",
+      "path": "datasets/geography/abs/sa_locality_centroids.tsv",
+      "license": "CC-BY-4.0",
+      "attribution": "Commonwealth of Australia (Australian Bureau of Statistics)",
+      "source_urls": [
+        "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SAL/MapServer/2",
+        "https://www.abs.gov.au/website-privacy-copyright-and-disclaimer"
+      ],
+      "source_date": "ASGS Edition3 2021",
+      "source_retrieved_at": null,
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "9fa42ef127dd6a974d3c2c7456c43d67ed5b6e74aa7991193c02c5e4e430df84",
+      "record_count": 1698,
+      "stable_key": "abs:sal2021:SA:<exact locality name> (source numeric SAL codes unavailable in this historical export)",
+      "validity": "Approximate locality representative points, not incident/address locations. Original source retrieval date unknown; review snapshot date is explicit."
+    },
+    {
+      "id": "abs:sa-boundary:2021",
+      "path": "datasets/geography/abs/sa_boundary.tsv",
+      "license": "CC-BY-4.0",
+      "attribution": "Commonwealth of Australia (Australian Bureau of Statistics)",
+      "source_urls": [
+        "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SAL/MapServer/0",
+        "https://www.abs.gov.au/website-privacy-copyright-and-disclaimer"
+      ],
+      "source_date": "ASGS Edition3 2021",
+      "source_retrieved_at": "2026-10-08",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "7dca56a72f037088ffdf5cf5fb1d93689c885aa8156916013523dbfd8a7a81f8",
+      "record_count": 222,
+      "stable_key": "abs:state:4:sal2021; ordered closed polygon rings",
+      "validity": "Union of locality polygons, rounded to7decimal places; even-odd ring semantics preserve islands/holes, not surveyed current boundary."
+    },
+    {
+      "id": "osm:sa-places:2026-10-07",
+      "path": "datasets/geography/osm/sa_osm_places.tsv",
+      "license": "ODbL-1.0; ABS locality labels CC-BY-4.0",
+      "attribution": "OpenStreetMap contributors; Commonwealth of Australia (Australian Bureau of Statistics)",
+      "source_urls": [
+        "https://download.geofabrik.de/australia-oceania/australia/south-australia.html",
+        "https://www.openstreetmap.org/copyright",
+        "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SAL/MapServer/0"
+      ],
+      "source_date": "2026-10-07T20:20:35Z",
+      "source_retrieved_at": "2026-10-08",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "ecdb6f57f8f6ec21e450856737f21446ab49cc23803866ec13382d8c2ba14834",
+      "record_count": 74302,
+      "stable_key": "osm:<node|way|relation>/<id>; row variants distinguish kind/name/locality/address",
+      "validity": "Derived ODbL database retained separately; public mapped venues/addresses/facilities, no incident/radio joins. Feature bounds, not surveyed incident points."
+    },
+    {
+      "id": "osm:adelaide:street-centroids",
+      "path": "datasets/geography/osm/adelaide_streets.tsv",
+      "license": "ODbL-1.0",
+      "attribution": "OpenStreetMap contributors",
+      "source_urls": [
+        "https://overpass-api.de/api/interpreter",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "source_date": null,
+      "source_retrieved_at": null,
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "dbda05ff02121968a441c1fee9e964e717e39d21cbc639afa9b5f947c08753bb",
+      "record_count": 15933,
+      "stable_key": "osm:street-centroid:adelaide:<exact name> (original way IDs unavailable)",
+      "validity": "Historical derived named-street gazetteer: median of ways in dominant connected cluster, regional bounding-box filters; not an address geocoder. Original input snapshot/retrieval date unknown; update requires reviewed regeneration."
+    },
+    {
+      "id": "osm:king_county:street-centroids",
+      "path": "datasets/geography/osm/king_county_streets.tsv",
+      "license": "ODbL-1.0",
+      "attribution": "OpenStreetMap contributors",
+      "source_urls": [
+        "https://overpass-api.de/api/interpreter",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "source_date": null,
+      "source_retrieved_at": null,
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "d0846195e4ce445607a59016c243a6f1365797e4bcfbf246cb66a3c2aadf1f51",
+      "record_count": 18505,
+      "stable_key": "osm:street-centroid:king_county:<exact name> (original way IDs unavailable)",
+      "validity": "Historical derived named-street gazetteer: median of ways in dominant connected cluster, regional bounding-box filters; not an address geocoder. Original input snapshot/retrieval date unknown; update requires reviewed regeneration."
+    },
+    {
+      "id": "sa-government:retirement-villages:2023",
+      "path": "datasets/geography/sa-government/sa_public_places.tsv",
+      "license": "CC-BY-4.0",
+      "attribution": "Government of South Australia",
+      "source_urls": [
+        "https://data.sa.gov.au/data/dataset/retirement-villages-register",
+        "https://data.sa.gov.au/data/api/3/action/package_show?id=retirement-villages-register"
+      ],
+      "source_date": "register2023; spatialJune2018",
+      "source_retrieved_at": "2026-10-08",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "94c93aeb910da4c0a99b2979ecc1c1b6ba0c6ffebfa1fbba48bd5d2a8f1b4a44",
+      "record_count": 409,
+      "stable_key": "sa:retirement-village:<registration_id>",
+      "validity": "409 active spatial records requiring unchangedregistration/name/address/locality across2023register and2018spatialdata; public facility references, not individual villas/incidents."
+    },
+    {
+      "id": "itu:maritime-identification-digits",
+      "path": "datasets/maritime/mmsi_mid.tsv",
+      "license": "Apache-2.0",
+      "attribution": "Michael J. Fazio (MIDs contributors); ITU factual source",
+      "source_urls": [
+        "https://github.com/michaeljfazio/MIDs",
+        "https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/mid.aspx"
+      ],
+      "source_date": null,
+      "source_retrieved_at": null,
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "6dda59be9672eb49554e82bc2486bddc7dd73f7632c7af980f12e2c414c0ea77",
+      "record_count": 292,
+      "stable_key": "itu:mid:<three-digit MID>",
+      "validity": "Historical source snapshot; original retrieval/revision unknown. Apache licence retained; source licence rechecked2026-10-12. This is a country-code reference, not a vessel owner registry."
+    },
+    {
+      "id": "dew:cfs-mapbook:pages:gda2020",
+      "path": "datasets/geography/dew-mapbook/MAPS_CfsMapBookPages_GDA2020.geojson",
+      "license": "CC-BY-4.0",
+      "attribution": "Government of South Australia, Department for Environment and Water",
+      "source_urls": [
+        "https://www.waterconnect.sa.gov.au/Content/Downloads/DEW/MAPS_CfsMapBookPages_geojson.zip"
+      ],
+      "source_date": "book-specific publication years/editions in extent properties",
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "bf2baba0244c0c5bc3e42357e1a4c910a8724007abe310799f7a695760e32170",
+      "record_count": null,
+      "stable_key": "dew:cfs-mapbook:pages:<source FID>; MAPNUM/ZONE/SCALE or BOOKNAME/PUBYEAR/EDITION retained",
+      "validity": "Official CFS map-book grid, not commercial UBD/Gregory grid. Original EPSG:7844 GDA2020 coordinates retained; do not silently label WGS84 or infer incident positions."
+    },
+    {
+      "id": "dew:cfs-mapbook:extents:gda2020",
+      "path": "datasets/geography/dew-mapbook/MAPS_CfsMapBookExtents_GDA2020.geojson",
+      "license": "CC-BY-4.0",
+      "attribution": "Government of South Australia, Department for Environment and Water",
+      "source_urls": [
+        "https://www.waterconnect.sa.gov.au/Content/Downloads/DEW/MAPS_CfsMapBookExtents_geojson.zip"
+      ],
+      "source_date": "book-specific publication years/editions in extent properties",
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "5a1fa96314a563a4bb5c1f3cb0b99e5d576c9378f78a471b04b7c9fcf415849e",
+      "record_count": null,
+      "stable_key": "dew:cfs-mapbook:extents:<source FID>; MAPNUM/ZONE/SCALE or BOOKNAME/PUBYEAR/EDITION retained",
+      "validity": "Official CFS map-book grid, not commercial UBD/Gregory grid. Original EPSG:7844 GDA2020 coordinates retained; do not silently label WGS84 or infer incident positions."
+    },
+    {
+      "id": "sascan:sagrn:p25:talkgroups:20251225115143",
+      "path": "datasets/radio/sascan-sagrn-talkgroups.v1.json",
+      "license": "Project factual contributions CC-BY-SA-4.0; upstream licence not stated",
+      "attribution": "SA Scan / sascan.net.au",
+      "source_urls": [
+        "https://web.archive.org/web/20251225115143/https://www.sascan.net.au/?page=infPages/GRNTalkgroups",
+        "https://www.sascan.net.au/?page=infPages/GRNTalkgroups"
+      ],
+      "source_date": "page updated2025-07-27; archived2025-12-25T11:51:43Z",
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "9bcbc67f11474364bbd37cffce5409220221adc34856cb617c27395b649f400d",
+      "record_count": null,
+      "stable_key": "sagrn:p25:talkgroup:<decimal ID>",
+      "validity": "Historical factual IDs/labels only. Human channel numbers kept separately.4conflicting source IDs have no selected name; existing operator/curated overrides must win. No rawHTML or upstream licence inference."
+    },
+    {
+      "id": "wavecap:operator-confirmed-radio-units:v1",
+      "path": "datasets/radio/operator-confirmed-radio-units.v1.json",
+      "license": "CC-BY-SA-4.0 original factual contributions",
+      "attribution": "Explicit project-operator confirmations",
+      "source_urls": [],
+      "provenance_kind": "operator-confirmation",
+      "source_date": "2026-10-11 and per-record confirmation/export dates",
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "a34721fc2eb826477540c3661cc02ee5645f4b1b0a3fbd0cebb83a14f6ce79ae",
+      "record_count": null,
+      "stable_key": "configured source_id + exact radio_id + declared validity interval",
+      "validity": "6curated operator confirmations only. No public confirmation URL exists; per-record truthful provenance and unknown time bounds retained. No neighbouring-ID inference, reviewedconsolefamily or immutable chassis claim."
+    },
+    {
+      "id": "wavecap:sagrn-talkgroups:v1",
+      "path": "bundles/sagrn-talkgroups.v1.json",
+      "license": "Project factual contributions CC-BY-SA-4.0; upstream licence not stated",
+      "attribution": "SA Scan / sascan.net.au",
+      "source_urls": [
+        "https://web.archive.org/web/20251225115143/https://www.sascan.net.au/?page=infPages/GRNTalkgroups",
+        "https://www.sascan.net.au/?page=infPages/GRNTalkgroups"
+      ],
+      "source_date": "page updated2025-07-27; archived2025-12-25T11:51:43Z",
+      "source_retrieved_at": "2026-10-12",
+      "snapshot_reviewed_at": "2026-10-12",
+      "sha256": "cd202f9473702179bf7febafb571692e35237d527f028abcedd449d93184382d",
+      "record_count": null,
+      "stable_key": "source_id + decimal talkgroup_id",
+      "validity": "674 unambiguous historical reference seeds;4 source-conflict IDs omitted; configured/operator overrides win."
+    }
+  ]
+}
