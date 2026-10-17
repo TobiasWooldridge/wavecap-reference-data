@@ -5,6 +5,9 @@ BASE = 'https://www.fire-brigade.asn.au/'
 ROOT = pathlib.Path(__file__).resolve().parent
 CACHE = pathlib.Path(os.environ.get('WAVECAP_REFERENCE_CACHE', ROOT.parent / 'cache'))
 SERVICES = {'SACFS': 'sacfs', 'SAMFS': 'samfs'}
+# Rights decision 2026-10-17 (RIGHTS.md): every captioned photo is CC BY-SA 4.0
+# under the site's sidebar notice; attribution keeps the photo's own credit.
+PHOTO = re.compile(r'<img\s+src="(/photos/[^"]+)"[^>]*>\s*<BR>\s*([^<]*?)\s*<BR>(?:\s*Picture by ([^<]+?)\s*<BR>)?', re.I)
 NULLABLE_FACTS = {'make_model', 'registration', 'water_litres', 'foam_litres', 'source_updated_text'}
 
 def text(value):
@@ -25,6 +28,26 @@ def fetch(path, refresh=False):
         'rights_status': 'conflicting-notices',
         'attribution': 'SACFS Promotions Unit; individual photo credits remain on source page',
     }
+
+def captioned_photos(source):
+    """Caption name -> (image path, credit); None when any photo lacks the expected caption."""
+    captioned = PHOTO.findall(source)
+    if len(captioned) != len(re.findall(r'src="/photos/', source, re.I)):
+        return None
+    photos = {}
+    for path, name, credit in captioned:
+        # A repeated caption keeps its first photo, with that photo's own credit.
+        photos.setdefault(text(name), (path, text(credit) if credit else None))
+    return photos
+
+def photo_record(page_url, photo):
+    """Captioned station-page photo for one listing, with its licence position."""
+    if photo is None:
+        return {'page_url': page_url, 'credit': None, 'rights_status': 'no-photo',
+                'redistribution_allowed': None, 'image_url': None, 'license': None}
+    image_path, credit = photo
+    return {'page_url': page_url, 'credit': credit, 'rights_status': 'cc-by-sa-4.0-sidebar',
+            'redistribution_allowed': True, 'image_url': urllib.parse.urljoin(BASE, image_path), 'license': 'CC-BY-SA-4.0'}
 
 def links(source, kind, service):
     result = {}
@@ -89,7 +112,7 @@ def bundle():
         'by_service': {s['service']: s['coverage'] for s in snapshots},
     })
     result = {'schema_version': 1, 'data_license': 'CC-BY-SA-4.0',
-              'third_party_rights': 'See RIGHTS.md; no photo or prose redistribution licence inferred',
+              'third_party_rights': 'See RIGHTS.md; photos are CC BY-SA 4.0 per the site sidebar notice (decision 2026-10-17), credited as captioned; source prose is not copied',
               'coverage': coverage}
     for key in ('stations', 'appliances', 'classes'):
         result[key] = [entry for snapshot in snapshots for entry in snapshot[key]]
@@ -150,7 +173,10 @@ def import_service(service, limit, refresh):
             continue
         visited.append(station_id)
         updated = re.search(r'last updated on\s*([^<]+)', source, re.I)
-        credits = {text(name): text(credit) for name, credit in re.findall(r'<BR>\s*([^<]+)<BR>\s*Picture by ([^<]+)', source, re.I)}
+        photos = captioned_photos(source)
+        if photos is None:
+            failures.append({'station_id': station_id, 'error': 'unparsed photo caption'})
+            photos = {}
         blocks = re.split(r'<TD WIDTH="25%"[^>]*>', source.split('Vehicles &amp; Appliances', 1)[1], flags=re.I)[1:]
         for block in blocks:
             name = text(block.split('</TD>', 1)[0])
@@ -179,8 +205,7 @@ def import_service(service, limit, refresh):
                 'make_model': text(match.group(3)) or None, 'class_id': namespace + ':class:' + class_name,
                 'class_source_url': urllib.parse.urljoin(BASE, match.group(1)), 'source_url': provenance['url'],
                 'operational_status': 'listed_at_source',
-                'photo': {'page_url': provenance['url'], 'credit': credits.get(name), 'rights_status': 'conflicting-notices',
-                          'redistribution_allowed': None, 'image_url': None},
+                'photo': photo_record(provenance['url'], photos.get(name)),
             }
             for field, label in [('water_litres', 'Water Capacity'), ('foam_litres', 'Foam Quantity')]:
                 capacity = re.search(label + r':\s*(\d+)\s*Litres', flat)

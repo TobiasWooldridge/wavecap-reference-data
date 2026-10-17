@@ -33,13 +33,13 @@ export interface ApplianceReference {
   operational_status: 'listed_at_source';
   water_litres: number | null;
   foam_litres: number | null;
-  photo: {
-    page_url: string;
-    credit: string | null;
-    rights_status: 'conflicting-notices';
-    redistribution_allowed: null;
-    image_url: null;
-  };
+  /** See RIGHTS.md (photo decision 2026-10-17); `credit` is the caption's own credit. */
+  photo:
+    | { page_url: string; credit: string | null; rights_status: 'cc-by-sa-4.0-sidebar';
+        redistribution_allowed: true; image_url: string; license: 'CC-BY-SA-4.0' }
+    | { page_url: string; credit: null; rights_status: 'no-photo';
+        redistribution_allowed: null; image_url: null; license: null };
+};
 }
 export interface SourceReference {
   url: string;

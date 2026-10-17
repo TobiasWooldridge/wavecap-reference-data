@@ -46,7 +46,8 @@ across systems. Public confirmation URLs are unavailable, explicitly null.
 For richer metadata, use exact `lookup.py --station-id samfs:station:40
 --vehicle-code 401` or the typed fire contract. Missing per-vehicle specs remain
 null; typical class figures are never a substitute. Photos are source-page links
-with credit when available; no media licence or image download is inferred.
+with credit and a CC BY-SA 4.0 thumbnail when the listing has a photo
+(RIGHTS.md, photo decision 2026-10-17).
 Geography stays in its separately licensed database, with source CRS/vintage.
 
 Source organization is geography-first. The fire snapshot is

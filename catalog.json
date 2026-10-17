@@ -16,10 +16,10 @@
       "source_date": null,
       "source_retrieved_at": "2026-10-12",
       "snapshot_reviewed_at": "2026-10-12",
-      "sha256": "aff03f995529d60f87b91a572375ed9dd2dbb11c5aa23f4208b7ff2b7d4681cf",
+      "sha256": "085c6eb47f41d62773ff4e97af5a2e5fd27f996f08ae55ef33b9025cc029613a",
       "record_count": null,
       "stable_key": "agency-qualified station/appliance id; see docs/fire-reference.md",
-      "validity": "Source listings, not verified availability. Source update/retrieval dates are retained per record/provenance; media link-only with conflicting notices.",
+      "validity": "Source listings, not verified availability. Source update/retrieval dates are retained per record/provenance; photos CC BY-SA 4.0 per the source sidebar notice, credited as captioned (RIGHTS.md photo decision 2026-10-17).",
       "geographic_scope": {
         "country": "AU",
         "subdivision": "SA"
@@ -37,10 +37,30 @@
       "source_date": null,
       "source_retrieved_at": "2026-10-12",
       "snapshot_reviewed_at": "2026-10-12",
-      "sha256": "25f5d1c2a2a0c9efb9eb43e03f971d97b1a1e9aa9513ecfaa9173cf981de1132",
+      "sha256": "a8f1120c424116d17ac1066fc3fd78aae1fb4d7c31303523c6a00e92c8668194",
       "record_count": null,
       "stable_key": "reference_id; exact case/whitespace-normalized full source name",
       "validity": "Ambiguous names omitted; no numeric-only or RF-ID join; compact labels never replace full/source identity.",
+      "geographic_scope": {
+        "country": "AU",
+        "subdivision": "SA"
+      }
+    },
+    {
+      "id": "wavecap:fire-appliance-thumbnails:v1",
+      "path": "media/australia/south-australia/fire/thumbnails.json",
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Each photo’s caption credit, via fire-brigade.asn.au",
+      "source_urls": [
+        "https://www.fire-brigade.asn.au/vehicles/Appliance_Find.asp"
+      ],
+      "source_date": null,
+      "source_retrieved_at": "2026-10-17",
+      "snapshot_reviewed_at": "2026-10-17",
+      "sha256": "ed39a00ac6df7de62ab6506ad3d2e1614d2cbdc85d2c73598e5699eca2e7d3e3",
+      "record_count": null,
+      "stable_key": "source image URL; listing_keys join to fire-reference appliances",
+      "validity": "224x160 WebP adaptations (centre-cropped, resized) of source photos, shared under CC BY-SA 4.0; manifest lists file hash, credit, source page and image per thumbnail. Originals not included.",
       "geographic_scope": {
         "country": "AU",
         "subdivision": "SA"

@@ -57,10 +57,11 @@ is never claimed unless every index entry was visited.
   Retrieval time appears in sources; source information may be older.
 - `class_id` is a type, e.g. `sacfs:class:34`; class specifications are typical,
   while appliance water/foam/model facts are per listing. Missing values are null.
-- `photo.page_url` links to the original source page. `image_url=null` deliberately:
-  no hotlink/download permission is inferred. `redistribution_allowed=null` means
-  unresolved, not permission. A UI can show a source link immediately; photo
-  previews require separately verified per-image rights and credits.
+- `photo.page_url` links to the original source page. `photo.rights_status`
+  follows RIGHTS.md (photo decision 2026-10-17): `cc-by-sa-4.0-sidebar` rows carry
+  the source `image_url`, the caption's own `credit` and `license`, and have a
+  committed thumbnail (`media/.../fire/thumbnails.json`); `no-photo` rows have none.
+  Attribute as "Photo: <credit> via fire-brigade.asn.au · CC BY-SA 4.0".
 - Equipment is not asserted from typical class lists. Source appliance pages
   remain available for additional factual verification.
 

@@ -2,7 +2,7 @@
 import json,pathlib,tempfile,unittest
 from unittest.mock import patch
 import import_reference
-from import_reference import links,normalize
+from import_reference import captioned_photos,links,normalize,photo_record
 class ReferenceTests(unittest.TestCase):
  def test_offline_rebuild_uses_scoped_agency_snapshots(self):
   relative=pathlib.Path('data/australia/south-australia/fire')
@@ -17,6 +17,16 @@ class ReferenceTests(unittest.TestCase):
     import_reference.bundle()
    actual=json.loads((destination/'reference.json').read_text())
    self.assertEqual(actual,expected)
+ def test_captioned_photos_keep_each_credit_and_first_repeated_caption(self):
+  cell='<img src="/photos/{0}.jpg" title="{1}" width=300>\n <BR>\n {1}<BR>\n Picture by {2}<BR>'
+  source=''.join(cell.format(*row) for row in [('a','Seaford 34','Emergency Media SA'),('b','Seaford Air','CFS Promotions Unit'),('c','Seaford 34','Someone Else')])
+  photos=captioned_photos(source)
+  self.assertEqual(photos,{'Seaford 34':('/photos/a.jpg','Emergency Media SA'),'Seaford Air':('/photos/b.jpg','CFS Promotions Unit')})
+  self.assertIsNone(captioned_photos(source+'<img src="/photos/d.jpg">'))
+  record=photo_record('https://www.fire-brigade.asn.au/p',photos['Seaford 34'])
+  self.assertEqual((record['rights_status'],record['credit'],record['license'],record['image_url']),
+   ('cc-by-sa-4.0-sidebar','Emergency Media SA','CC-BY-SA-4.0','https://www.fire-brigade.asn.au/photos/a.jpg'))
+  self.assertEqual(photo_record('https://www.fire-brigade.asn.au/p',None)['rights_status'],'no-photo')
  def test_unclosed_legacy_anchors_preserve_separate_agencies(self):
   source='<A href="Appliance_Display.asp?Service_Code=SAMFS&Station_Code=40">St Marys<br><A href="Appliance_Display.asp?Service_Code=SACFS&Station_Code=40">Other<br>'
   self.assertEqual(links(source,'Appliance','SAMFS')['40']['id'],'samfs:station:40')

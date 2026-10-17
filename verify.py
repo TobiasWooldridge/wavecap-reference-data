@@ -25,8 +25,14 @@ for a in d['appliances']:
  for field in ('water_litres','foam_litres'):
   assert a[field] is None or isinstance(a[field],int) and a[field]>=0
  assert isinstance(a['photo'],dict)
- assert a['photo']['image_url'] is None and a['photo']['redistribution_allowed'] is None
- assert a['photo']['rights_status']=='conflicting-notices';url(a['photo']['page_url'])
+ photo=a['photo'];url(photo['page_url'])
+ # RIGHTS.md decision 2026-10-17: every captioned photo is CC BY-SA 4.0, credited as captioned.
+ if photo['rights_status']=='cc-by-sa-4.0-sidebar':
+  assert photo['redistribution_allowed'] is True and photo['license']=='CC-BY-SA-4.0'
+  url(photo['image_url']);assert urllib.parse.urlparse(photo['image_url']).path.startswith('/photos/')
+ else:
+  assert photo['rights_status']=='no-photo' and photo['image_url'] is None and photo['credit'] is None,photo
+  assert photo['license'] is None and photo['redistribution_allowed'] is None
  if a['service']=='SAMFS' and a['vehicle_code']:
   assert a['compact_label']=='MFS '+a['vehicle_code']
 for source in d['sources']:

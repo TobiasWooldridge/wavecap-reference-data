@@ -55,14 +55,17 @@ Read [fire reference contract](docs/fire-reference.md), [typed interface](refere
 Run `python3 verify.py`, `python3 verify_publication.py`,
 `python3 verify_layout.py`, and `python3 -m unittest test_reference.py test_sascan.py` offline. `python3 build_bundles.py` rebuilds
 the small consumer file deterministically from the committed fire snapshot.
+`python3 build_fire_thumbnails.py` (network) refreshes the appliance photo
+thumbnails: originals stay in memory, the output is 224x160 WebP, and the run
+fails if the set exceeds 25 MiB.
 
 This is a snapshot reference, not a dispatch or live availability service.
 Public mapped locations are venue/feature references, not incident positions.
 CFS map-book data is distinct from commercial UBD/Gregory grids; original GDA2020
 coordinates are declared, not relabelled as WGS84.
 
-Photos remain source-page links because the source site's footer CC notice and
-copyright page conflict. No photo binaries or copied narrative descriptions are
+Appliance photos ship as small CC BY-SA 4.0 thumbnails, each with its own
+credit (RIGHTS.md, photo decision 2026-10-17). No original photo binaries or copied narrative descriptions are
 included. No raw audio, incident transcripts, live inference/evidence databases,
 credentials or private conversation contents belong here. Confirmed radio/unit
 records, when included, are explicitly curated confirmations with scoped identity
