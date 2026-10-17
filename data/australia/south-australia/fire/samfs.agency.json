@@ -650,9 +650,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=32",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-32-30.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -678,9 +679,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=32",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-32-321.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 100
@@ -706,9 +708,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=32",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-32-329.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -734,9 +737,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=40",
         "credit": "Liv Filsell",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-40-401.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -762,9 +766,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=40",
         "credit": "Adelaide Emergency Media",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-40-409.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -790,9 +795,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-201.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 100
@@ -818,9 +824,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-2015.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -846,9 +853,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-202.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 100
@@ -874,9 +882,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -902,9 +911,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-203.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 20
@@ -930,9 +940,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-204.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -958,9 +969,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-205.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -986,9 +998,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "SA Emergency Services Photography",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-206.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1014,9 +1027,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-2090.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1042,9 +1056,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Adelaide Emergency Media",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-2092.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1070,9 +1085,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Liv Filsell",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-pod.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1098,9 +1114,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-20.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1126,9 +1143,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-pod3.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1154,9 +1172,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-pod4.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1182,9 +1201,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-h2.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1210,9 +1230,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -1238,9 +1259,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -1266,9 +1288,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-pod5.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1294,9 +1317,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=20",
         "credit": "Emergency Services Adelaide",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-20-pod2.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1322,9 +1346,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=21",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-21-217.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 150
@@ -1350,9 +1375,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=22",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-22-229.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2000,
       "foam_litres": 100
@@ -1378,9 +1404,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=24",
         "credit": "Adelaide Emergency Media",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-24-243.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 20
@@ -1406,9 +1433,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=24",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-24-249.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -1434,9 +1462,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=25",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-25-257.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 150
@@ -1462,9 +1491,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=27",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -1490,9 +1520,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=28",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-28-289.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -1518,9 +1549,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=30",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-30-301.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -1546,9 +1578,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=30",
         "credit": "SA Emergency Services Photography",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-30-303.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 20
@@ -1574,9 +1607,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=31",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-31-319.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 100
@@ -1602,9 +1636,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=33",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-33-331.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 150
@@ -1630,9 +1665,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=33",
         "credit": "Emergency Media SA",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-33-339.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 150
@@ -1658,9 +1694,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=35",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-35-359.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -1686,9 +1723,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=36",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-36-369.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 60
@@ -1714,9 +1752,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=37",
         "credit": "Adelaide Emergency Media",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-37-377.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -1742,9 +1781,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=41",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-41-417.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -1770,9 +1810,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=42",
         "credit": "Adelaide Emergency Media",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-42-429.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -1798,9 +1839,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=43",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-43-40.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -1826,9 +1868,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=43",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-nlg-433.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": null
@@ -1854,9 +1897,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=43",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-43-439.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 150
@@ -1882,9 +1926,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=44",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-44-449.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 150
@@ -1910,9 +1955,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=45",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-45-451.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": null
@@ -1938,9 +1984,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=46",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-46-469.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -1966,9 +2013,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=50",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": 130
@@ -1994,9 +2042,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=50",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 1800,
       "foam_litres": null
@@ -2022,9 +2071,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=50",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 1800,
       "foam_litres": 100
@@ -2050,9 +2100,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=50",
         "credit": "Andrew Cutter",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-50-5023.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": null,
       "foam_litres": null
@@ -2078,9 +2129,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=50",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2106,9 +2158,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=51",
         "credit": "Jarred Riddell",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-51-518.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1500,
       "foam_litres": 20
@@ -2134,9 +2187,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=51",
         "credit": "Sean McGrath",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-51-519.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -2162,9 +2216,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=51",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2190,9 +2245,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=52",
         "credit": "Emergency Services Adelaide",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-52-5214.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2218,9 +2274,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=52",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-52-523.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": null
@@ -2246,9 +2303,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=52",
         "credit": "Sticks Venning",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-52-5242.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 10800,
       "foam_litres": null
@@ -2274,9 +2332,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=52",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-52-528.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1500,
       "foam_litres": null
@@ -2302,9 +2361,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=52",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -2330,9 +2390,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=54",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-54-5424.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 20
@@ -2358,9 +2419,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=54",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-54-543.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1200,
       "foam_litres": null
@@ -2386,9 +2448,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=54",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-54-5442.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 10800,
       "foam_litres": null
@@ -2414,9 +2477,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=54",
         "credit": "Cain Gower",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-54-549.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 100
@@ -2442,9 +2506,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=55",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-55-5514.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2470,9 +2535,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=55",
         "credit": "Darren van Ek",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-55-559.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": null
@@ -2498,9 +2564,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=60",
         "credit": "Zachary Matulin",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-60-601.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 100
@@ -2526,9 +2593,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=60",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-60-6014.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2554,9 +2622,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=60",
         "credit": "Zachary Matulin",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-60-609.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 100
@@ -2582,9 +2651,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=60",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -2610,9 +2680,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=60",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -2638,9 +2709,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=61",
         "credit": "Daniel Baldwin",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-61-611.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 130
@@ -2666,9 +2738,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=61",
         "credit": "Daniel Baldwin",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-61-6114.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2694,9 +2767,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=61",
         "credit": "Daniel Baldwin",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-61-6142.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 10800,
       "foam_litres": null
@@ -2722,9 +2796,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=61",
         "credit": "Daniel Baldwin",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-61-618.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1600,
       "foam_litres": 100
@@ -2750,9 +2825,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=61",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -2778,9 +2854,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=62",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-62-6214.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -2806,9 +2883,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=62",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-62-628.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1500,
       "foam_litres": 40
@@ -2834,9 +2912,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=62",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-62-629.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 120
@@ -2862,9 +2941,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=62",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -2890,9 +2970,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=63",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-63-631.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2000,
       "foam_litres": null
@@ -2918,9 +2999,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=64",
         "credit": "Emergency Services Adelaide",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-64-641.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 40
@@ -2946,9 +3028,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=66",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-66-661.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -2974,9 +3057,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=67",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-67-671.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 130
@@ -3002,9 +3086,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=68",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 1000,
       "foam_litres": null
@@ -3030,9 +3115,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=68",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-68-6824.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 130
@@ -3058,9 +3144,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=70",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": null,
       "foam_litres": null
@@ -3086,9 +3173,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=70",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-70-7024.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 3000,
       "foam_litres": 20
@@ -3114,9 +3202,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=70",
         "credit": "Jake Sinclair",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-70-703.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 20
@@ -3142,9 +3231,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=70",
         "credit": "Andrew Cutter",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-70-709.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 100
@@ -3170,9 +3260,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=71",
         "credit": "Mel Carberry",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-71-711.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 60
@@ -3198,9 +3289,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=71",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-71-719.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 100
@@ -3226,9 +3318,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=72",
         "credit": "Alex Rohde",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-72-721.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1800,
       "foam_litres": 20
@@ -3254,9 +3347,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=72",
         "credit": "Steve Schueler",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-72-729.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 130
@@ -3282,9 +3376,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=73",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -3310,9 +3405,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=73",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-73-7314.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 1200,
       "foam_litres": null
@@ -3338,9 +3434,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=73",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-73-739.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -3366,9 +3463,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=MFSM",
         "credit": "CFS Promotions Unit",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-mfsm-01.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -3394,9 +3492,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=MFSM",
         "credit": "Adelaide Emergency Media",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-mfsm-02.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -3422,9 +3521,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=MFSM",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-mfsm-03.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -3450,9 +3550,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=MFSM",
         "credit": "Braeden Gatt",
-        "rights_status": "conflicting-notices",
-        "redistribution_allowed": null,
-        "image_url": null
+        "rights_status": "cc-by-sa-4.0-sidebar",
+        "redistribution_allowed": true,
+        "image_url": "https://www.fire-brigade.asn.au/photos/samfs-mfsm-04.jpg",
+        "license": "CC-BY-SA-4.0"
       },
       "water_litres": 2500,
       "foam_litres": 100
@@ -3478,9 +3579,10 @@
       "photo": {
         "page_url": "https://www.fire-brigade.asn.au/vehicles/Appliance_Display.asp?Service_Code=SAMFS&Station_Code=MFSRV",
         "credit": null,
-        "rights_status": "conflicting-notices",
+        "rights_status": "no-photo",
         "redistribution_allowed": null,
-        "image_url": null
+        "image_url": null,
+        "license": null
       },
       "water_litres": 1800,
       "foam_litres": null

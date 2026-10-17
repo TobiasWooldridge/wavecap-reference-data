@@ -9,6 +9,8 @@ import subprocess
 ROOT = pathlib.Path(__file__).resolve().parent
 SCOPES = (
     ('data/australia/south-australia/', {'country': 'AU', 'subdivision': 'SA'}),
+    # Licensed media keeps the same geography-first layout as its data.
+    ('media/australia/south-australia/', {'country': 'AU', 'subdivision': 'SA'}),
     ('data/australia/', {'country': 'AU'}),
     ('data/united-states/washington/king-county/',
      {'country': 'US', 'subdivision': 'WA', 'county': 'King County'}),

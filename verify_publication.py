@@ -2,7 +2,23 @@
 """Offline package/hash/bundle/privacy guard, including reachable git history."""
 import argparse,hashlib,json,pathlib,re,subprocess
 ROOT=pathlib.Path(__file__).resolve().parent
-FORBIDDEN_SUFFIXES={'.html','.htm','.jpg','.jpeg','.png','.gif','.wav','.mp3','.flac','.sqlite','.sqlite3','.db','.zip','.pbf','.pdf','.pem','.key'}
+FORBIDDEN_SUFFIXES={'.html','.htm','.jpg','.jpeg','.png','.gif','.webp','.wav','.mp3','.flac','.sqlite','.sqlite3','.db','.zip','.pbf','.pdf','.pem','.key'}
+# The only published images: licensed thumbnails, each listed with its hash and credit.
+THUMBNAILS='media/australia/south-australia/fire/thumbnails'
+THUMBNAIL_SIZE=(224,160)
+THUMBNAILS_MAX_TOTAL_BYTES=25*1024*1024
+
+def webp_size(data):
+ assert data[:4]==b'RIFF' and data[8:12]==b'WEBP'
+ chunk=data[12:16]
+ if chunk==b'VP8 ':
+  assert data[23:26]==b'\x9d\x01\x2a'
+  return int.from_bytes(data[26:28],'little')&0x3fff,int.from_bytes(data[28:30],'little')&0x3fff
+ if chunk==b'VP8L':
+  bits=int.from_bytes(data[21:25],'little')
+  return (bits&0x3fff)+1,((bits>>14)&0x3fff)+1
+ assert chunk==b'VP8X',chunk
+ return int.from_bytes(data[24:27],'little')+1,int.from_bytes(data[27:30],'little')+1
 SECRET=re.compile(rb'-----BEGIN (?:OPENSSH |RSA |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|AKIA[0-9A-Z]{16}')
 def validate(*, history=True):
  catalog=json.loads((ROOT/'catalog.json').read_text())
@@ -32,10 +48,25 @@ def validate(*, history=True):
   assert row['source_id']=='sagrn' and row['provenance']['kind']=='operator-confirmation'
   assert row['provenance']['public_confirmation_url'] is None
   assert row['identity_scope']['wacn'] is None and row['identity_scope']['rf_system_id'] is None
+ thumbnails=json.loads((ROOT/THUMBNAILS).with_suffix('.json').read_text())
+ licensed={a['photo']['image_url']:a for a in fire['appliances'] if a['photo']['rights_status']=='cc-by-sa-4.0-sidebar'}
+ published=set()
+ for row in thumbnails['thumbnails']:
+  data=(ROOT/THUMBNAILS/row['file']).read_bytes();published.add(row['file'])
+  assert hashlib.sha256(data).hexdigest()==row['sha256'],row['file']
+  assert webp_size(data)==THUMBNAIL_SIZE,row['file']
+  source=licensed[row['image_url']]['photo']
+  assert row['credit']==source['credit'] and row['license']=='CC-BY-SA-4.0' and row['page_url']==source['page_url']
+ assert len(published)==len(thumbnails['thumbnails'])==len(licensed)
+ total=sum((ROOT/THUMBNAILS/name).stat().st_size for name in published)
+ assert total==thumbnails['total_bytes']<=THUMBNAILS_MAX_TOTAL_BYTES,total
+ assert (thumbnails['width'],thumbnails['height'])==THUMBNAIL_SIZE
  # Public snapshot contains public references, never working caches/incidents.
  for path in ROOT.rglob('*'):
   if '.git' in path.parts or '__pycache__' in path.parts or not path.is_file():continue
-  assert path.suffix.lower() not in FORBIDDEN_SUFFIXES,path
+  relative=path.relative_to(ROOT)
+  allowed_thumbnail=relative.parent.as_posix()==THUMBNAILS and relative.suffix=='.webp' and relative.name in published
+  assert allowed_thumbnail or path.suffix.lower() not in FORBIDDEN_SUFFIXES,path
   assert not SECRET.search(path.read_bytes()),path
  # History may be skipped for a focused layout check after the baseline review.
  if not history:
@@ -47,7 +78,8 @@ def validate(*, history=True):
  for entry in objects:
   if ' ' not in entry:continue
   oid,name=entry.split(' ',1)
-  assert pathlib.PurePosixPath(name).suffix.lower() not in FORBIDDEN_SUFFIXES,name
+  historical=pathlib.PurePosixPath(name)
+  assert (historical.parent.as_posix()==THUMBNAILS and historical.suffix=='.webp') or historical.suffix.lower() not in FORBIDDEN_SUFFIXES,name
   if subprocess.check_output(['git','cat-file','-t',oid],cwd=ROOT,text=True).strip()!='blob':continue
   data=subprocess.check_output(['git','cat-file','blob',oid],cwd=ROOT)
   assert not SECRET.search(data),name
