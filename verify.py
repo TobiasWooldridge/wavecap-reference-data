@@ -29,6 +29,7 @@ for a in d['appliances']:
  # RIGHTS.md decision 2026-10-17: every captioned photo is CC BY-SA 4.0, credited as captioned.
  if photo['rights_status']=='cc-by-sa-4.0-sidebar':
   assert photo['redistribution_allowed'] is True and photo['license']=='CC-BY-SA-4.0'
+  assert isinstance(photo['credit'],str) and photo['credit'],photo
   url(photo['image_url']);assert urllib.parse.urlparse(photo['image_url']).path.startswith('/photos/')
  else:
   assert photo['rights_status']=='no-photo' and photo['image_url'] is None and photo['credit'] is None,photo

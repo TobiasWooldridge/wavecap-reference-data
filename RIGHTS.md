@@ -14,7 +14,8 @@ Adelaide, as well as CFS Promotions Unit. Credit alone is not a licence.
 
 This repository independently structures factual identifiers, names, models,
 registrations and numerical capacities, with source links and hashes. It excludes
-source prose, database schema, artwork and photo binaries. The project's own
+source prose, database schema, artwork and full-size photos; the only images are
+the licensed thumbnails under the photo decision below. The project's own
 arrangement and contributions in data/australia/south-australia/fire/reference.json are licensed CC BY-SA 4.0;
 third-party rights are not relicensed or represented as conclusively cleared.
 Importer/validator code is MIT (LICENSE-CODE). Photo records follow the decision
@@ -41,8 +42,8 @@ Evidence, re-fetched 2026-10-17:
   who apply for such ... All Photographs are © Copyright CFS Promotions Unit
   unless otherwise specified."
 - Appliance pages caption each photo "Picture by <credit>". At this snapshot
-  1,111 of 1,274 listings have a captioned photo (1,101 distinct images); 317 are
-  credited "CFS Promotions Unit" and 794 to 168 other credits (photographers,
+  1,111 of 1,274 listings have a captioned photo (1,101 distinct images); 318 are
+  credited "CFS Promotions Unit" and 793 to 168 other credits (photographers,
   media units, brigades and regions). None is uncredited. One caption ("Region 6
   Air Support Trailer") appears twice; the listing keeps the first photo and
   that photo's credit.
